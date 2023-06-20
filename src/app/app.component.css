@@ -1,0 +1,35 @@
+
+
+.main {
+
+  color: #000000 !important;
+  border: solid black 2px;
+  /*text-align: center;*/
+  width: 85%;
+  margin: auto;
+
+}
+
+.menu_tabs {
+
+  color: #000000 !important;
+  border: solid black 2px;
+  margin: auto;
+  width: 85%;
+  justify-content: center;
+  margin: auto;
+}
+
+#content{
+  color: #000000 !important;
+  border: solid black 2px;
+  margin: auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+

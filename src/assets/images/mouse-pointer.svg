@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 322.5094 513.9223"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="mouse-pointer.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   width="322.5094"
+   height="513.9223"
+   inkscape:export-filename="C:\Users\alecm\OneDrive - Dinamich Ltd\CloudFiler\2.0 Marketing\Graphics\Product Icons\Master icons\mouse-pointer-128.png"
+   inkscape:export-xdpi="24"
+   inkscape:export-ydpi="24"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.7843398"
+     inkscape:cx="63.328746"
+     inkscape:cy="247.99089"
+     inkscape:window-width="3060"
+     inkscape:window-height="1381"
+     inkscape:window-x="314"
+     inkscape:window-y="537"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <path
+     id="path6"
+     style="opacity:1;fill:none;stroke:#7030a0;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     class="fa-secondary"
+     d="m 19.028148,15.005539 c -2.287426,0.09872 -4.296186,2.336765 -3.939217,4.645305 -0.05722,12.175411 -0.01925,24.351318 -0.03045,36.526961 0.0062,131.105335 0.01233,262.210675 0.01849,393.316015 0.178264,2.19206 2.483163,4.23837 4.708082,3.61325 1.762347,-0.82623 2.813859,-2.57515 4.237362,-3.83421 32.93816,-33.88138 65.875898,-67.76316 98.814315,-101.64427 20.45884,49.79993 40.89059,99.61091 61.42187,149.38086 0.89729,1.55269 3.02047,2.55302 4.68506,1.59433 3.9108,-1.572 7.71658,-3.39092 11.60764,-5.01055 12.66275,-5.52845 25.36134,-10.98396 37.96121,-16.65019 1.86171,-1.33076 2.44282,-4.09193 1.28164,-6.064 -20.961,-51.17038 -41.9985,-102.31016 -62.98882,-153.46889 -0.0686,-0.46686 -0.97057,-1.49255 -0.0252,-1.27961 42.33203,-7.2e-4 84.6641,0.0247 126.99609,-0.0527 2.62426,-0.59687 4.11624,-4.06794 2.74805,-6.38476 -1.19739,-1.44367 -2.6244,-2.67889 -3.88407,-4.06868 C 209.52558,209.82082 116.41575,114.01265 23.269614,18.239792 22.260348,17.273057 21.377019,16.15218 20.287914,15.282883 19.90267,15.07809 19.464255,14.977961 19.028148,15.005539 Z" />
+</svg>

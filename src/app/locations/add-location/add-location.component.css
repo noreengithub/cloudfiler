@@ -1,0 +1,19 @@
+.modal-dialog {
+
+
+  top:50% !important;
+
+}
+
+.add_location_line{
+  font-size: 16px;
+}
+
+.text-line{
+  float: right;
+  margin-right: 50px;
+}
+
+.add_location_line .icon_text{
+  margin-left: 10px;
+}

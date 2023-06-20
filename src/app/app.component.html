@@ -1,0 +1,12 @@
+<app-header  *ngIf="tokeStatus && !hideMenu"></app-header> 
+<main *ngIf="tokeStatus  ">
+  <app-menu  *ngIf="tokeStatus && !hideMenu"></app-menu>
+  <section class="content" >
+    <router-outlet  ></router-outlet>
+  </section>
+</main>
+<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+<app-spinner></app-spinner>

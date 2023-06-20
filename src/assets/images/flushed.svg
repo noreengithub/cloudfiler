@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 496 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="flushed.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.2617188"
+     inkscape:cx="165.25077"
+     inkscape:cy="255.60372"
+     inkscape:window-width="4096"
+     inkscape:window-height="2089"
+     inkscape:window-x="-18"
+     inkscape:window-y="-18"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <path
+     d="M248,8C111,8,0,119,0,256S111,504,248,504,496,393,496,256,385,8,248,8ZM80,224a72,72,0,1,1,72,72,72,72,0,0,1-72-72ZM312,400H184c-21.2,0-21.2-32,0-32H312C333.2,368,333.2,400,312,400Zm32-104a72,72,0,1,1,72-72,72,72,0,0,1-72,72Z"
+     class="fa-secondary"
+     id="path6" />
+  <path
+     d="M152,200a23.94,23.94,0,1,0,.12,0Zm192,0a23.94,23.94,0,1,0,.12,0Z"
+     class="fa-primary"
+     id="path832"
+     style="fill:#7030a0;fill-opacity:1" />
+</svg>

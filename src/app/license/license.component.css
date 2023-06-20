@@ -1,0 +1,59 @@
+
+.main-account-container{
+  margin-left: 60px;
+
+}
+ .table-header-account{
+   background-color: #D4BEE5 !important;
+   padding: 10px
+ }
+.main-account-container .heading b {
+  margin-left: 2rem;
+  font-size: 18px;
+}
+.main-account-container span{
+  display: inline-block;
+}
+.main-account-container span.rightext {
+  font-size:16px;
+  font-weight: 600;
+  display:flex;
+  margin-top: 6px;
+  align-items: center;
+  justify-content: end;
+}
+.row.table-header-account {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin: 3rem 0 1rem;
+}
+.table-header-account{
+  display: flex;
+  align-items: center;
+}
+.table-header-account .box {
+  font-size: 18px;
+}
+.table-header-account .box b{
+  margin-left: 1rem;
+  font-size: 18px;
+}
+.licenses_table tr.heading{
+  background-color: #7030A0;
+  color: #fff;
+  font-weight: 600;
+}
+.licenses_table tr td{
+  vertical-align: middle;
+  padding: 0 20px;
+  min-width: 150px;
+}
+.add_user {
+  font-size: 18px;
+  vertical-align: middle;
+  color: #000000;
+  cursor: pointer;
+}
+.add_user img {
+ margin-right: 1rem;
+}

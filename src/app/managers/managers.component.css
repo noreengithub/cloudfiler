@@ -1,0 +1,75 @@
+.location-row1 .location-span {
+    margin-left: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  .note {
+    margin-top: 1rem;
+  }
+  .note p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .allowuser {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+  }
+  .allowuser h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  .uponfile {
+    display: inherit;
+    margin-top: 5rem;
+  }
+  .uponfile span {
+    margin: 0 1rem;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .notifications {
+    margin-top: 5rem;
+  }
+  .checkboxlist {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .checkboxlist img {
+    margin-right: 1rem;
+  }
+
+  .ms-auto{
+    margin-left: auto;
+  }
+.managerlist img{
+    margin-right: 1rem;
+    width: 34px;
+}
+.managerlist img.ms-auto{
+    width: 24px;
+}
+.managerlist span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.add_user {
+    font-size: 16px;
+    vertical-align: middle;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .add_user img {
+   margin-right: 1rem;
+  }
+  .min_h_270{
+    min-height: 270px;
+  }

@@ -1,0 +1,128 @@
+.edit_location .modal-body{
+  padding: 20px;
+}
+
+.main-account-container{
+  margin-left: 60px;
+  margin-top: 1rem;
+}
+
+
+.checkbox label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.checkbox .glyphicon-ok{
+  color: #7030A0;
+}
+
+.checkbox .cr {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #a9a9a9;
+  border-radius: .25em;
+  width: 1.6em;
+  height: 1.6em;
+  float: left;
+  margin-right: .5em;
+}
+
+tr:hover{
+  background-color: #D4BEE5;
+}
+tr td{
+  width: 15% !important;
+  padding : 0 15px !important;
+  font-size: 14px;
+  vertical-align: middle;
+  height: 60px;
+}
+
+tr th {
+  width: 10% !important;
+  padding : 14px !important;
+}
+
+.table tr.heading {
+  background-color: #7030A0 !important;
+  color: white !important;
+}
+
+.table tr.heading td{
+  font-weight: 700 !important;
+}
+
+.checkbox .cr .cr-icon {
+  position: absolute;
+  font-size: 1em;
+  line-height: 0;
+  top: 50%;
+  left: 5%;
+}
+
+.checkbox label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label input[type="checkbox"]+.cr>.cr-icon {
+  opacity: 0;
+}
+
+.checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+  opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled+.cr {
+  opacity: .5;
+}
+.edit-location{
+  margin-top: 50px;
+
+}
+.edit-location .inner-div{
+  float: none;
+  margin: auto;
+
+}
+
+.edit-location .inner-div .row{
+  margin: 20px;
+
+}
+
+.modal-dialog {
+
+
+  top:50% !important;
+
+}
+
+.inner-addon{
+  position: relative;
+}
+.inner-addon input{
+  display: inline-block;
+  height: 40px;
+  min-width: 220px;
+  padding: 10px;
+  color: black;
+
+}
+.inner-addon img{
+  position: absolute;
+  right: 20px;
+  width: 24px;
+  top: 8px;
+
+}
+.add_user {
+  font-size: 18px;
+  vertical-align: middle;
+  color: #000000;
+  cursor: pointer;
+}
+.add_user img {
+  margin-right: 1rem;
+}

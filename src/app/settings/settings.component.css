@@ -1,0 +1,113 @@
+.location-row1 .location-span {
+  margin-left: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.note {
+  margin-top: 1rem;
+}
+.note p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.allowuser {
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+}
+.allowuser h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.uponfile {
+  display: inherit;
+  margin-top: 5rem;
+}
+.uponfile span {
+  margin: 0 1rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.notifications {
+  margin-top: 5rem;
+}
+.checkboxlist {
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.checkboxlist img {
+  margin-right: 1rem;
+}
+.btn-reset {
+  padding: 15px;
+  font-size: 18px;
+}
+.tooltipwrap {
+  position: relative;
+  display: inline-block;
+}
+.tooltipwrap img{
+    cursor: pointer;
+}
+
+.tooltipwrap .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border: solid 1px #9c9c9c;
+    box-shadow: 6px 7px 7px 0px #9c9c9c;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.tooltipwrap .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 5%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent #d4bee5 transparent;
+}
+
+.tooltipwrap:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.setting_dropdown a.dropdown-toggle {
+  font-size: 16px;
+  color: #000;
+  border: solid 2px gray;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+.setting_dropdown a i{
+  font-size: 26px;
+  color: #7030A0;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: -4px;
+}
+.setting_dropdown .dropdown-menu{
+  right: 0;
+}
+.mt-5{
+  margin-top: 5rem;
+}

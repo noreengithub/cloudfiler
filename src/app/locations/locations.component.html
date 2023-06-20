@@ -1,0 +1,66 @@
+<div class="row ">
+  <div class="col-sm-7 col-xs-10">
+    <img class="w_sm_32" width="50" height="50" src = "./../assets/images/folder-open.svg" alt="logo"/>
+    <div class="title-div">
+      <span class="title">Locations</span>
+    </div>
+    <span class="para float-right">Locations are only accessible to nominated users and groups.</span>
+  </div>
+  <div class="col-sm-4 col-xs-1 ">
+  </div>
+  <div class="col-sm-1 col-xs-1  ">
+    <a  target="_blank" href="https://help.cloudfiler.io/"><img   class="float-right help_image " width="40" height="40" src = "./../assets/images/Help-black.svg" alt="help" /></a>
+  </div>
+</div>
+<div class="row" style="margin-top:20px;margin-bottom: 20px;">
+  <div class="col-md-4 ">
+     <input type="text"  [(ngModel)]="searchTerm" (input)="search(searchTerm)"  name="search" class="form-control location-filter"  placeholder="Type here to filter"  >
+   </div>
+</div>
+
+<!--table row -->
+<div class="row location-table">
+    <div class="col-md-12  ">
+        <table class="table table-responsive ">
+          <thead>
+              <tr>
+                  <th  class="header first_cell" scope="col"></th>
+                  <th  class="header" scope="col" *ngFor="let group of groups ">{{group.description}}</th>
+              </tr>
+          </thead>
+          <tbody *ngIf="totalLocations > 0" >
+              <tr>
+                <td><b>Default Access Rights</b></td>
+                <td *ngFor="let group of groups"  class="permission-class"></td>
+              </tr>
+              <tr *ngFor="let location of locations.reverse(); let i = index;"   [ngClass]="{'edit_location_tr':  clickLocation==location.location_id }" class="location_row">
+                  <td  class="first_cell location_id_{{location.location_id}}"   [ngClass]="{'edit_location_td':  clickLocation==location.location_id }"  (click)="editLocation(location.location_id)" id="location_{{i}}">
+                    <app-edit-location  (parentClicklocation)="updatedClickedLocationStatus($event)" [clickedLocation]="clickLocation"   [selectedLocation]="location" [selectedIndex]="i"  (locationToDelete)="deleteLocation($event)" (editLocationData)="updateLocation($event)"  (editLocationData)="updateLocation($event)"></app-edit-location>
+                  </td>
+                  <td *ngFor="let group of  location.groups.sort(); let groupId = index;"  class="permission-class group_id_{{ group.group_id }}" [ngClass]="{'permission_change': is_manager}" >
+                    <span *ngIf=" clickLocation!=location.location_id "  > {{  ( group.permission =='none'?  '':  group.permission) }}</span>
+                    <div class="btn-group test-invalid"   *ngIf=" clickLocation== location.location_id "   >
+                      <button  type="button" class="btn btn-secondary dropdown-toggle allow_edit ggdg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  >
+                        {{  group.permission }}  <img width="20" height="20" src = "./../assets/images/combo-arrow.svg" alt="logo"/>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li *ngFor="let permission of permissionsObj;"><a (click)="changeGroupPermission(permission.key, group.group_id,location.location_id)">{{permission.value}}</a></li>
+                      </ul>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+          <tbody *ngIf="totalLocations==0">
+              <tr>
+                  <td colspan="8" style="text-align: center">No Data Found</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+</div>
+
+<div class="row" >
+  <div class="col-md-12  ">
+      <app-add-location   (locationToAdd)="addLocation($event)"></app-add-location>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 480 480"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="Help-black.svg"
+   width="480"
+   height="480"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:export-filename="C:\Users\alecm\OneDrive\Personal\Projects\CloudFiler\8.0 Documentation\Help - Icon source\8.png"
+   inkscape:export-xdpi="4.8000002"
+   inkscape:export-ydpi="4.8000002"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.4921875"
+     inkscape:cx="255.66492"
+     inkscape:cy="255.32984"
+     inkscape:window-width="2251"
+     inkscape:window-height="1884"
+     inkscape:window-x="870"
+     inkscape:window-y="197"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 234.25131,313.74181 c -22.73277,0 -41.22638,18.49362 -41.22638,41.22639 0,22.73186 18.49361,41.22638 41.22638,41.22638 22.73276,0 41.22638,-18.49452 41.22638,-41.22638 0,-22.73277 -18.49362,-41.22639 -41.22638,-41.22639 z"
+     id="path829"
+     style="fill:#7030a0;fill-opacity:1;stroke:none;stroke-width:35.849;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     d="m 240.21569,91.477846 c -48.84161,0 -79.99262,20.574654 -104.45421,57.141554 -3.16905,4.73745 -2.10881,11.12664 2.43326,14.57084 l 31.09813,23.5797 c 4.66486,3.5374 11.31127,2.69584 14.9356,-1.90179 16.01018,-20.30668 26.98805,-32.08219 51.35642,-32.08219 18.309,0 40.95572,11.78357 40.95572,29.5378 0,13.42188 -11.08003,20.31475 -29.1578,30.45017 -21.08282,11.81852 -48.98053,26.52828 -48.98053,63.32641 v 3.5849 c 0,5.93929 4.81542,10.75471 10.75471,10.75471 h 50.18864 c 5.93929,0 10.75471,-4.81542 10.75471,-10.75471 v -1.19467 c 0,-25.50838 74.55343,-26.5704 74.55343,-95.5977 0,-51.98289 -53.92142,-91.415024 -104.43808,-91.415024 z"
+     id="path827"
+     style="fill:#7030a0;fill-opacity:1;stroke:none;stroke-width:35.849;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     d="m 448.85501,240.25131 c 0,115.60439 -93.70322,209.27385 -209.27385,209.27385 -115.57064,0 -209.273859,-93.66946 -209.273859,-209.27385 0,-115.53689 93.703219,-209.273851 209.273859,-209.273851 115.57063,0 209.27385,93.736961 209.27385,209.273851 z"
+     id="path2"
+     style="opacity:0.4;fill:none;stroke:#000000;stroke-width:56.4933;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:export-filename="C:\Users\alecm\OneDrive\Personal\Projects\CloudFiler\8.0 Documentation\Help - Icon source\Help-black-24.png"
+     inkscape:export-xdpi="4.8000002"
+     inkscape:export-ydpi="4.8000002" />
+</svg>

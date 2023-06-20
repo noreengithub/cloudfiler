@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="arrow-right.svg"
+   width="512"
+   height="512"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.3203125"
+     inkscape:cx="224.18935"
+     inkscape:cy="255.6213"
+     inkscape:window-width="2292"
+     inkscape:window-height="1285"
+     inkscape:window-x="899"
+     inkscape:window-y="288"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg10" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <path
+     d="M 1.0576986e-5,436.05917 V 72.887579 A 27.299282,25.875976 0 0 1 27.367712,46.946752 H 45.612847 A 27.299282,25.875976 0 0 1 72.980548,72.887579 V 436.05917 A 27.299282,25.875976 0 0 1 45.612847,461.99999 H 27.367712 A 27.299282,25.875976 0 0 1 1.0576986e-5,436.05917 Z"
+     class="fa-secondary"
+     id="path6"
+     style="stroke-width:1.1102" />
+  <path
+     d="m 109.47082,297.70809 v -86.46943 a 27.299282,25.875976 0 0 1 27.3677,-25.94083 H 291.92216 V 90.397638 c 0,-19.239447 24.5283,-28.859171 38.89635,-15.240236 L 504.44377,239.66548 a 22.076613,20.925601 0 0 1 0,29.5077 L 330.85272,433.68126 c -14.36805,13.61893 -38.89635,3.99921 -38.89635,-15.24024 V 323.64891 H 136.83852 a 27.299282,25.875976 0 0 1 -27.3677,-25.94082 z"
+     class="fa-primary"
+     id="path8"
+     style="stroke-width:1.1102;fill:#7030a0;fill-opacity:1" />
+</svg>

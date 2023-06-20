@@ -1,0 +1,116 @@
+<div class=" listingtab" style="width: 100%; font-size: 19px !important;">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+
+      <div>
+        <div class=" " id="location" role="tabpanel" aria-labelledby="location-tab">
+          <div class="row location-row1">
+            <div class="col-sm-8 col-xs-10">
+              <div class="title-div">
+              <img class="w_sm_32" width="40" height="40" src="./../assets/images/cog.svg" alt="logo" /><span class="location-span title">Your
+                settings</span>
+              </div>
+            </div>
+
+            <div class="col-sm-1 col-xs-1 " style="float: right;">
+              <img class="float-right " width="40" height="40" src="./../assets/images/Help-black.svg" alt="logo" />
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <div class="note">
+                <p class="text-danger">NOTE: Greyed out settings are enforced by your employer
+                </p>
+              </div>
+
+              <div class="d-flex direction_sm_column">
+
+                <div class="uponfile" [ngClass]="{'disabled': !yourSetting?.addin_settings?.show_viral_footer }" >
+
+                  <span>Upon filing messages:</span>
+
+                  <div class="dropdown show-data setting_dropdown" >
+                        <a class="dropdown-toggle user-email" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"  >
+                            Move to '{{ yourSetting?.addin_settings_move_filed_incoming_messages_to}}' folder
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <!--<ul class="dropdown-menu " id="testDropdown">
+                          <li><a href="#">dropdwon text</a></li>
+                          <li><a href="#">dropdwon text</a></li> 
+                          <li><a href="#">dropdwon text</a></li>
+                        </ul>-->
+                    </div>
+                  </div> 
+                </div>
+              </div>
+          </div>
+
+          <div class="d-flex">
+
+            <div class="uponfile">
+              <img _ngcontent-gjg-c120="" width="30" height="30"
+                [src]=" yourSetting?.addin_settings_mark_filed_messages  == true ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
+                (click)="markMessage()"
+                alt="logo">
+              <span>Mark filed messages</span>
+              <div class="tooltipwrap">
+                <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
+                <span class="tooltiptext">
+                    <b> Checked behaviour:</b>
+                    <br>
+                    Messages are marked with a CloudFiler category and the date is added to the subject line in the format
+                    <b>
+                      [Filed on 2038-05-23]
+                    </b>
+
+
+                    <br />
+                    <b>Checked behaviour:</b> <br>
+                    The subject line is not changed and no category is added 
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="row">
+            <div class="col-md-8">
+              <div class="location-row1 notifications">
+                  <img width="40" height="40" src="./../assets/images/envelope.svg" alt="logo" /><span class="location-span">
+                    Notifications</span>
+              </div>
+              <div class="checkboxlist">
+                <img _ngcontent-gjg-c120="" width="30" height="30"
+                  src="./../assets/images/checkbox-checked-outline.svg" alt="logo">
+                <span>
+                  CloudFiler news (We will rarely email you with news which is typically about new features in the product)
+                 </span>
+
+              </div>
+              <div class="checkboxlist">
+                <img _ngcontent-gjg-c120="" width="30" height="30"
+                  src="./../assets/images/checkbox-checked-outline.svg" alt="logo">
+                <span>
+                  CloudFiler offers (From time to time we provide special offers and discounts)
+                 </span>
+
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+
+
+
+        <br><Br> <br><Br><br><Br><br><Br><br>
+
+
+
+
+    </div>
+  </div>
+
+</div>

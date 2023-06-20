@@ -1,0 +1,27 @@
+<a   *ngIf="is_manager" (click)="open(modalData)" class="add_location_line"> <img width="20" height="20" src = "./../assets/images/plus-square-grey.svg" alt="logo"/>  <span class="icon_text" > Add Location</span></a> <span class="text-line"  > <b>Admin:</b> Full Access, <b> None:</b> No Rights , only can view , <b>User:</b> File & Search  </span>
+
+<ng-template #modalData let-modal class="add_location">
+  <div class="modal-header">
+    <div class="row edit_row"   >
+      <div class="col-md-5  col-xs-4 "><img width="30" height="30" src = "./../assets/images/folder-open.svg" alt="logo"/>&nbsp;&nbsp;<span class="head_title">Add Location </span></div>
+      <div class="col-md-7 col-xs-4" >  <img  style="float:right" width="30" height="30" src = "./../assets/images/Help-black.svg" alt="logo"/></div>
+    </div>
+  </div>
+ <form #postForm="ngForm" (ngSubmit)="onAddLocation()"  >
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="InputLocation">Location Name</label>
+        <input  [ngClass]="{  'in-valid': locationError } "  [(ngModel)]="locationDescription" type="text" class="form-control" name="location" id="InputLocation" aria-describedby="emailHelp" placeholder="Enter Location Name">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Add</button>
+      <a (click)="modal.close('Done click')"  class="btn btn-default">Close</a>
+    </div>
+  </form>
+
+</ng-template>
+
+
+
+

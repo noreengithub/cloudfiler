@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="thumbtack-in.svg"
+   width="512"
+   height="512"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.3203125"
+     inkscape:cx="192"
+     inkscape:cy="256"
+     inkscape:window-width="2371"
+     inkscape:window-height="1268"
+     inkscape:window-x="757"
+     inkscape:window-y="488"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g1237" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <g
+     id="g1237">
+    <path
+       d="m 296.85369,488.67655 c -9.37258,9.37258 -24.56855,9.37258 -33.94113,0 C 25.324679,251.08867 217.76461,443.5286 25.324679,251.08867 c -9.372583,-9.37258 -9.372581,-24.56855 0,-33.94113 35.878601,-35.87859 90.969291,-37.9787 141.230441,-19.60806 l 92.26329,-74.99575 -29.84698,-29.846976 c -9.37258,-9.372587 -9.37259,-24.568541 0,-33.941129 L 262.91256,24.8145 c 9.37258,-9.37258 24.56854,-9.372584 33.94113,3e-6 L 489.18673,217.14755 c 9.37258,9.37258 9.37258,24.56854 0,33.94112 L 455.2456,285.0298 c -9.37258,9.37259 -24.56854,9.37258 -33.94112,0 l -29.84698,-29.84698 -74.99574,92.26329 c 18.16557,49.71668 16.58165,105.04072 -19.60807,141.23044 z"
+       id="path6"
+       sodipodi:nodetypes="sccsccssssssssccs"
+       style="opacity:0.4" />
+    <path
+       id="path8"
+       style="fill:#7030a0;fill-opacity:1;stroke-width:0.725478"
+       class="fa-primary"
+       d="m 121.4912,347.25519 -92.296766,92.29678 a 8,4.2105447 45 0 0 -0.734734,1.92244 l -0.893549,34.83468 a 8,4.2105447 45 0 0 10.125995,10.12599 l 34.834674,-0.89355 a 8,4.2105447 45 0 0 1.92245,-0.73473 l 92.29677,-92.29677 z" />
+  </g>
+</svg>

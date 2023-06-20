@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 576 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="folder-search.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.3203125"
+     inkscape:cx="287.81065"
+     inkscape:cy="255.6213"
+     inkscape:window-width="1904"
+     inkscape:window-height="1001"
+     inkscape:window-x="340"
+     inkscape:window-y="391"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg10" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+    <style
+       id="style2-9">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <path
+     d="M 69.08,207.63 0,326.05 V 48 A 48,48 0 0 1 48,0 h 160 l 64,64 h 160 a 48,48 0 0 1 48,48 v 48 H 152 a 96.31,96.31 0 0 0 -82.92,47.63 z"
+     class="fa-secondary"
+     id="path6" />
+  <path
+     d="m 152,192 h 400 a 24,24 0 0 1 20.73,36.09 L 500.27,352.25 A 64,64 0 0 1 445,384 H 45 A 24,24 0 0 1 24.27,347.91 L 96.72,223.75 A 64,64 0 0 1 152,192 Z"
+     class="fa-primary"
+     id="path8"
+     style="fill:#7030a0;fill-opacity:1" />
+  <g
+     id="g832"
+     transform="matrix(0.53406957,0,0,0.53406957,299.90673,237.03986)">
+    <path
+       d="M 208,80 A 128,128 0 1 1 117.49,117.49 127.15,127.15 0 0 1 208,80 M 208,0 C 93.12,0 0,93.12 0,208 0,322.88 93.12,416 208,416 322.88,416 416,322.88 416,208 416,93.12 322.88,0 208,0 Z"
+       class="fa-secondary"
+       id="path6-6"
+       style="opacity:0.4;fill:#000000" />
+    <path
+       d="M 504.9,476.7 476.6,505 a 23.9,23.9 0 0 1 -33.9,0 L 343,405.3 a 24,24 0 0 1 -7,-17 V 372 l 36,-36 h 16.3 a 24,24 0 0 1 17,7 l 99.7,99.7 a 24.11,24.11 0 0 1 -0.1,34 z"
+       class="fa-primary"
+       id="path8-8"
+       style="fill:#7030a0;fill-opacity:1" />
+  </g>
+</svg>

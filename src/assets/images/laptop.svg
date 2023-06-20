@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="laptop.svg"
+   width="512"
+   height="512"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.3203125"
+     inkscape:cx="319.6213"
+     inkscape:cy="255.6213"
+     inkscape:window-width="2486"
+     inkscape:window-height="1205"
+     inkscape:window-x="749"
+     inkscape:window-y="479"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg10" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <path
+     d="M 422.4,30 H 89.6 A 38.512,43.012663 0 0 0 51.2,72.887574 V 373.10059 H 460.8 V 72.887574 A 38.512,43.012663 0 0 0 422.4,30 Z M 409.6,315.91716 H 102.4 V 87.183432 h 307.2 z"
+     class="fa-secondary"
+     id="path6"
+     style="stroke-width:0.845454" />
+  <path
+     d="M 409.6,87.183432 H 102.4 V 315.91716 H 409.6 Z M 499.2,401.69231 H 305.232 c -0.592,17.70006 -11.768,28.59171 -26.192,28.59171 H 230.4 c -14.952,0 -26.4,-15.60929 -26.216,-28.59171 H 12.8 A 12.8,14.295858 0 0 0 0,415.98817 v 14.29585 a 51.352,57.353195 0 0 0 51.2,57.18344 H 460.8 A 51.352,57.353195 0 0 0 512,430.28402 v -14.29585 a 12.8,14.295858 0 0 0 -12.8,-14.29586 z"
+     class="fa-primary"
+     id="path8"
+     style="stroke-width:0.845454;fill:#7030a0;fill-opacity:1" />
+</svg>

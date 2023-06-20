@@ -1,0 +1,63 @@
+.edit_row .title{
+  font-size: 20px ;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.edit-location-header{
+  font-size: 20px;
+}
+
+.edit-location-header img{
+  vertical-align: sub;
+}
+
+.edit_row .text-title{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.edit_row .edit_model_button{
+  background-color: #7030A0 !important;
+  color: white;
+  width: 100%;
+}
+
+.edit_row .edit_model_button:active , .edit_row .edit_model_button:focus{
+  background-image: none;
+  outline: unset;
+  box-shadow: unset;
+}
+
+.edit_row .edit-model-line{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-dialog{
+  width: 700px !important;
+}
+
+.not-implemented .modal-footer{
+  border: unset;
+}
+
+.not-implemented .btn:active , .not-implemented .btn:focus{
+  background-image: none;
+  outline: unset;
+  box-shadow: unset;
+}
+
+.btn{
+  white-space: normal !important;
+}
+
+
+@media (max-width:767px){
+  .edit-model-line .btn, .form-control {
+    margin-top: 10px;
+}
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="warning.svg"
+   width="512"
+   height="512"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.3203125"
+     inkscape:cx="288.18935"
+     inkscape:cy="255.6213"
+     inkscape:window-width="2531"
+     inkscape:window-height="1275"
+     inkscape:window-x="1173"
+     inkscape:window-y="713"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg10" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <path
+     d="M 506.33399,419.98817 293.01455,50.142012 c -16.39414,-28.449704 -57.51285,-28.449704 -73.93366,0 L 5.7614477,419.98817 C -10.614913,448.38453 9.8866548,484 42.719391,484 H 469.36716 c 32.77939,0 53.39654,-35.56213 36.96683,-64.01183 z m -250.28627,7.11242 a 28.449704,28.449704 0 1 1 28.4497,-28.4497 28.449704,28.449704 0 0 1 -28.4497,28.4497 z m 33.9974,-211.95918 -11.37989,113.79881 a 14.224852,14.224852 0 0 1 -14.15372,12.81126 H 247.6195 A 14.224852,14.224852 0 0 1 233.46577,328.94022 L 222.08589,215.14141 a 14.224852,14.224852 0 0 1 14.11816,-15.63845 h 39.68734 a 14.224852,14.224852 0 0 1 14.15373,15.63845 z"
+     class="fa-secondary"
+     id="path6"
+     style="stroke-width:0.889053" />
+  <path
+     d="m 275.89139,199.50296 h -39.68734 a 14.224852,14.224852 0 0 0 -14.15373,15.63845 l 11.37989,113.79881 a 14.224852,14.224852 0 0 0 14.15372,12.81126 h 16.89201 a 14.224852,14.224852 0 0 0 14.15373,-12.81126 l 11.37988,-113.79881 a 14.224852,14.224852 0 0 0 -14.11816,-15.63845 z m -19.84367,170.69822 a 28.449704,28.449704 0 1 0 28.4497,28.44971 28.449704,28.449704 0 0 0 -28.4497,-28.44971 z"
+     class="fa-primary"
+     id="path8"
+     style="stroke-width:0.889053;fill:#7030a0;fill-opacity:1" />
+</svg>

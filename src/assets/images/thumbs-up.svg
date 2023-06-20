@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="thumbs-up.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="C:\Users\alecm\OneDrive - Dinamich Ltd\CloudFiler\2.0 Marketing\Graphics\Product Icons\Master icons\thumbs-up.png"
+   inkscape:export-xdpi="24"
+   inkscape:export-ydpi="24"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.2617188"
+     inkscape:cx="195.36842"
+     inkscape:cy="255.60372"
+     inkscape:window-width="4096"
+     inkscape:window-height="2089"
+     inkscape:window-x="-18"
+     inkscape:window-y="-18"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.fa-secondary{opacity:.4}</style>
+  </defs>
+  <path
+     d="M163.56 229.81c39.61-39.15 56.65-80.59 89.12-113.11 14.8-14.84 20.18-37.24 25.39-58.91C282.52 39.29 291.82 0 312 0c24 0 72 8 72 81.45 0 42.42-26 66.21-33.28 94.55h101.73c33.39 0 59.39 27.75 59.55 58.1.08 17.94-7.55 37.25-19.44 49.19l-.11.12c9.84 23.33 8.24 56-9.31 79.46 8.68 25.9-.07 57.71-16.38 74.76 4.3 17.6 2.24 32.58-6.15 44.63C440.2 511.59 389.62 512 346.84 512H344c-48.28 0-87.8-17.6-119.56-31.73-16-7.09-36.82-15.88-52.65-16.17a12 12 0 0 1-11.78-12V238.33a12 12 0 0 1 3.55-8.52z"
+     class="fa-secondary"
+     id="path6" />
+  <path
+     d="M104 224H24a24 24 0 0 0-24 24v240a24 24 0 0 0 24 24h80a24 24 0 0 0 24-24V248a24 24 0 0 0-24-24zM64 472a24 24 0 1 1 24-24 24 24 0 0 1-24 24z"
+     class="fa-primary"
+     id="path8"
+     style="fill:#7030a0;fill-opacity:1" />
+</svg>

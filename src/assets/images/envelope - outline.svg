@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="envelope - outline.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="C:\Users\alecm\OneDrive - Dinamich Ltd\CloudFiler\2.0 Marketing\Graphics\Product Icons\Master icons\envelope - outline.png"
+   inkscape:export-xdpi="24"
+   inkscape:export-ydpi="24"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.3203125"
+     inkscape:cx="203.73964"
+     inkscape:cy="255.6213"
+     inkscape:window-width="2738"
+     inkscape:window-height="1535"
+     inkscape:window-x="759"
+     inkscape:window-y="301"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 256.94231,293.67603 c 21.43292,0.36953 52.28893,-26.97592 67.80932,-38.24667 122.59259,-88.96508 131.92329,-96.72527 160.19258,-118.89726 5.35823,-4.15724 8.49926,-10.62407 8.49926,-17.46044 v -17.55281 c 0,-24.481569 -19.86241,-44.343971 -44.34397,-44.343971 H 64.785119 c -24.481566,0 -44.343968,19.862402 -44.343968,44.343971 v 17.55281 c 0,6.83637 3.141031,13.21081 8.499261,17.46044 28.269278,22.0796 37.599988,29.93218 160.192588,118.89726 15.52038,11.27075 46.37639,38.6162 67.80931,38.24667 z"
+     id="path827"
+     style="fill:none;stroke:#000000;stroke-width:36.9534;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.4" />
+  <path
+     d="m 483.53718,227.91674 c 3.60291,-2.86385 8.96108,-0.18476 8.96108,4.34196 v 188.92146 c 0,24.48126 -19.86216,44.34342 -44.34343,44.34342 H 63.84517 c -24.481266,0 -44.343423,-19.86216 -44.343423,-44.34342 V 232.35108 c 0,-4.6191 5.265781,-7.2058 8.961067,-4.34196 20.693596,16.07448 48.13109,36.49094 142.360866,104.9461 19.49262,14.22684 52.38066,44.15866 85.17632,43.9739 32.98042,0.27714 66.51514,-30.30134 85.2687,-43.9739 94.22978,-68.45516 121.57489,-88.964 142.26848,-105.03848 z"
+     id="path2"
+     style="fill:none;stroke:#7030a0;stroke-width:36.9528;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>

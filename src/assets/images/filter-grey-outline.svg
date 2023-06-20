@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="filter-grey-outline.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="0.93360192"
+     inkscape:cx="430.05481"
+     inkscape:cy="245.28656"
+     inkscape:window-width="2042"
+     inkscape:window-height="1156"
+     inkscape:window-x="598"
+     inkscape:window-y="602"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 460.33332,36.95051 H 52.809553 c -18.72535,0 -28.17412,22.373097 -14.90614,35.438352 L 200.35322,232.38085 v 178.23317 c 0,6.77352 3.35628,13.12148 8.99198,17.00688 l 70.2706,48.42057 c 13.8635,9.55611 33.17034,-0.12882 33.17034,-17.00687 V 232.38085 L 475.24035,72.388862 C 488.48107,59.34956 479.09731,36.95051 460.33332,36.95051 Z"
+     id="path821"
+     style="opacity:0.4;fill:none;fill-opacity:1;stroke:#000000;stroke-width:60;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:export-filename="C:\Users\alecm\OneDrive\Personal\Projects\CloudFiler\1.0 Product design\CloudFiler icons\filter-16.png"
+     inkscape:export-xdpi="3"
+     inkscape:export-ydpi="3" />
+</svg>
