@@ -23,12 +23,14 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AccessdeniedComponent } from './accessdenied/accessdenied.component';
 import { LicenseComponent } from './license/license.component';
 import { PrivatesettingsComponent } from './privatesettings/privatesettings.component';
-import { SettingsComponent } from './settings/settings.component';
 import { YoursettingsComponent } from './yoursettings/yoursettings.component';
 import { YourprivatesettingsComponent } from './yourprivatesettings/yourprivatesettings.component';
 import { AddMemberComponent } from './groups/add-member/add-member.component';
 import { EditGroupComponent } from './groups/edit-group/edit-group.component';
 import { ManagersComponent } from './managers/managers.component';
+import { EditManagerComponent } from './managers/edit-manager/edit-manager.component';
+import { PeopleDialogueComponent } from './people-dialogue/people-dialogue.component';
+import { DefaultSettingsComponent } from './default-settings/default-settings.component';
 
 
 @NgModule({
@@ -48,12 +50,14 @@ import { ManagersComponent } from './managers/managers.component';
       AccessdeniedComponent,
       LicenseComponent,
       PrivatesettingsComponent,
-      SettingsComponent,
       YoursettingsComponent,
       YourprivatesettingsComponent,
       AddMemberComponent,
       EditGroupComponent,
-      ManagersComponent
+      ManagersComponent,
+      EditManagerComponent,
+      PeopleDialogueComponent,
+      DefaultSettingsComponent
    ],
   imports: [
       BrowserModule,

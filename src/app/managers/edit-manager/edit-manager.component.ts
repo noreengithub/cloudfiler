@@ -4,37 +4,32 @@ import { UserService } from 'src/app/shared/user.service';
  
 
 @Component({
-  selector: 'app-add-member',
-  templateUrl: './add-member.component.html',
-  styleUrls: ['./add-member.component.css']
+  selector: 'app-edit-manager',
+  templateUrl: './edit-manager.component.html',
+  styleUrls: ['./edit-manager.component.css']
 })
-export class AddMemberComponent implements OnInit {
+export class EditManagerComponent implements OnInit {
 
   closeModal='';
   memberDescription !: string;
   memberError=false; 
   searchGroup:any;
-  searchMember:any;
-  AllGroupCopy:any;
-  AllMembersCopy:any;
+  searchMember:any;  
   @Output() groupMemberToAdd = new EventEmitter<string>();
   @Input() selectedMembers: any;
   @Input() selectedGroup:any;
   @Input() allGroups:any;
+  @Input() AllGroupCopy:any;
   preSelectedUsers:any;
   @Input() allUserLists: any;
+  @Input() AllMembersCopy: any;
  
   constructor(private modalService: NgbModal ) { 
    
   }
 
   ngOnInit(): void { 
-    this.preSelectedUsers  = [...this.selectedMembers];  
-    this.AllGroupCopy =   (this.allGroups);
-    this.AllMembersCopy =   (this.allUserLists);
-
-    console.log("sssssssss",this.AllMembersCopy);
-    console.log("aaaaa",this.allGroups);
+    this.preSelectedUsers  = this.selectedMembers ? [...this.selectedMembers] : [];  
   }
 
   open(content:any) {
@@ -46,8 +41,6 @@ export class AddMemberComponent implements OnInit {
       this.closeModal = `Dismissed ${this.getDismissReason(res)}`;
     });
   }
-
-   
 
   private getDismissReason(reason: any): string {
      
@@ -62,10 +55,10 @@ export class AddMemberComponent implements OnInit {
   }
 
   onAddGroupMember(){
-    
+     
     this.memberError=false; 
-      this.groupMemberToAdd.emit(this.selectedMembers);
-      this.modalService.dismissAll(); 
+    this.groupMemberToAdd.emit(this.selectedMembers);
+    this.modalService.dismissAll(); 
   }
 
   checkedImage(user:any){
@@ -96,22 +89,30 @@ export class AddMemberComponent implements OnInit {
 
   filterGroup(value:string){ 
     if( value!==undefined && value!='' && value !=null) {
+      console.log("kkkkkkkkkkk",this.AllGroupCopy);
+      console.log("bbbbbbb", value);
       this.allGroups = this.AllGroupCopy.filter((groups: any) =>
       groups.description.toLowerCase().includes(value.toLowerCase())
       );
+      console.log("bbbbbbb",this.allGroups);
     }else{ 
       this.allGroups = this.AllGroupCopy;
     }
   }
 
   filterMembers(value:string){ 
+    
     if( value!==undefined && value!='' && value !=null) {
+      
       this.allUserLists = this.AllMembersCopy.filter((member: any) =>
       member.email.toLowerCase().includes(value.toLowerCase())
       );
+      
     }else{
+        
       this.allUserLists= this.AllMembersCopy;
     }
   }
 
 }
+

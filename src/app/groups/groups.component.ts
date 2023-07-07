@@ -102,9 +102,10 @@ export class GroupsComponent implements OnInit {
   deleteGroupMember(groupMember:string){
     
     if(window.confirm('Are sure you want to delete this member?')){
-     // this.groupService.deleteGroupMember(this.activeGroup,groupMember).subscribe(() => {
-      //  this.clickGroup( this.activeGroup); 
-      //});
+      
+      this.groupService.deleteGroupMember(this.activeGroup,groupMember).subscribe(() => {
+        this.clickGroup( this.activeGroup); 
+      });
     }
   }
 

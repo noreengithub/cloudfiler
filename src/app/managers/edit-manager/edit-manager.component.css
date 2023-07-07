@@ -1,0 +1,49 @@
+.add_group span{
+    font-size: 18px;
+}
+input{
+    display: block;
+}
+.modalheading{
+    display: flex;
+    align-items: center;
+}
+.modalheading img{
+    width: 32px;
+    margin-right: 10px;
+}
+.modalheading h4{
+  font-weight: 600;
+}
+.people_heading {
+    background: #7030A0;
+    padding: 1px 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.people_heading h5 {
+    color:#fff;
+}
+.filter_input{
+    position: relative;
+}
+.filter_input input{
+    padding: 0.2rem 0.5rem;
+}
+.filter_input img{
+    position: absolute;
+    right: 4px;
+    width: 17px;
+    top: 4px;
+}
+.emaillist{
+    margin: 1rem;
+}
+.emaillist img{
+    width: 16px;
+    margin-right: 0.5rem;
+}
+.people_div {
+    border: solid 2px #7030a0;
+}

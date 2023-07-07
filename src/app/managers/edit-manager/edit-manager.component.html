@@ -1,0 +1,79 @@
+<img (click)="open(modalData)"  width="20" height="50" src = "./../assets/images/edit.svg" alt="logo" style="margin-left: 20px;"  />
+
+<ng-template #modalData let-modal class="add_location">
+  <!-- <div class="modal-header">
+      <div class="row edit_row"   >
+        <div class="col-md-5  col-xs-4 "><img width="30" height="30" src = "./../assets/images/folder-open.svg" alt="logo"/>&nbsp;&nbsp;<span class="head_title">Add Group Member </span></div>
+        <div class="col-md-7 col-xs-4" >  <img  style="float:right" width="30" height="30" src = "./../assets/images/Help-black.svg" alt="logo"/></div>
+      </div>
+
+    </div> -->
+
+  <form #postForm="ngForm" (ngSubmit)="onAddGroupMember()">
+    <div class="modal-body">
+      <div class="modalheading">
+        <img width="50" height="50" src="./../assets/images/Group.svg" alt="logo">
+
+        <h4>{{selectedGroup.description}}</h4>
+      </div>
+      <!-- <div class="form-group">
+          <label for="InputLocation">Group Member Email</label>
+          <input  [ngClass]="{  'in-valid': memberError } "   [(ngModel)]="memberDescription" type="text" class="form-control" name="location" id="InputLocation" aria-describedby="emailHelp" placeholder="Enter Group Member Name">
+        </div> -->
+      
+      <div class="people_div">
+        <div class="people_heading">
+          <h5>Groups</h5>
+          <div class="filter_input">
+            <input type="text" placeholder="Type here to filter" [(ngModel)]="searchGroup" (input)="filterGroup(searchGroup)" name="groups" >
+            <img src="./../assets/images/filter-grey-outline.svg" alt="logo">
+          </div>
+        </div>            
+        <div class="emaillist  " *ngFor="let group of allGroups;let i = index;" >
+          <img _ngcontent-gjg-c120=""  [ngClass]="group.group_id == selectedGroup.id?'checked':'unchecked'" 
+          [src]=" group.group_id == selectedGroup.id?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
+          alt="logo"  >
+          <span>
+            {{group.description}}
+          </span> 
+        </div>  
+      </div>
+
+      <div class="people_div">
+        <div class="people_heading">
+          <h5>People</h5>
+         <div class="filter_input">
+          <input type="text" placeholder="Type here to filter" [(ngModel)]="searchMember" (input)="filterMembers(searchMember)" name="members">
+          <img src="./../assets/images/filter-grey-outline.svg" alt="logo">
+         </div>
+        </div>            
+        
+      <div class="emaillist  " *ngFor="let user of allUserLists;let i = index;" >
+        <img _ngcontent-gjg-c120=""  [ngClass]="checkedImage(user.email)?'checked':'unchecked'" 
+        [src]="checkedImage(user.email)?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
+         alt="logo" (click)="clickMember(user,checkedImage(user.email))">
+        <span>
+          {{user.email}}
+         </span>
+
+      </div>
+        
+      <!-- <div class="emaillist">
+        <img _ngcontent-gjg-c120=""
+          src="./../assets/images/checkbox-unchecked-outline.svg" alt="logo">
+        <span>
+          Grant.bail@mybusiness.com
+         </span>
+
+      </div> -->
+      
+    </div>
+    </div>
+    <div class="modal-footer">
+
+      <a (click)="modal.close('Done click')" class="btn btn-default">Cancel</a>
+      <button type="submit" class="btn btn-primary">Ok</button>
+    </div>
+  </form>
+
+</ng-template>

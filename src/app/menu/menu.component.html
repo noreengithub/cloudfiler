@@ -7,17 +7,20 @@
 <input id="tab10" type="radio" name="tabs" [checked] ="selectedTab=='managers'" *ngIf="permission!='manager'">
 <label class="location_label" for="tab10"  *ngIf="permission!='manager'" (click)="onSelect('managers')">Managers</label>
 
+<input id="tab10" type="radio" name="tabs" [checked] ="selectedTab=='managers'" >
+<label class="location_label" for="tab10"  (click)="onSelect('managers')">Managers</label>
+
 <input id="tab3" type="radio" name="tabs" [checked] ="selectedTab=='accounts'">
 <label class="location_label" for="tab3" (click)="onSelect('accounts')">Accounts</label>
 
 <input id="tab4" type="radio" name="tabs" [checked] ="selectedTab=='locations'"  >
-<label class="location_label" for="tab4">Settings & Admin</label>
+<label class="location_label" for="tab4">Settings & Admin</label> 
 
 <input id="tab5" type="radio" name="tabs" [checked] ="selectedTab=='locations' || selectedTab==''">
 <label class="location_label" for="tab5"  (click)="onSelect('locations')" >Locations</label>
 
-<input id="tab6" type="radio" name="tabs" [checked] ="selectedTab=='settings'">
-<label class="location_label" for="tab6" (click)="onSelect('settings')" >Default Settings</label>
+<input id="tab6" type="radio" name="tabs" [checked] ="selectedTab=='default-settings'">
+<label class="location_label" for="tab6" (click)="onSelect('default-settings')" >Default Settings</label>
 
 <input id="tab7" type="radio" name="tabs" [checked] ="selectedTab=='your-settings'">
 <label class="location_label last" for="tab7" (click)="onSelect('your-settings')" >Your Settings</label>
