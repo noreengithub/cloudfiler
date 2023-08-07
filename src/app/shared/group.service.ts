@@ -7,7 +7,6 @@ import {AuthService} from "./auth.sevice";
 @Injectable({
   providedIn: 'root'
 })
-
 export class GroupService{
 
   constructor( private http:HttpClient, private authService: AuthService  ) { }
@@ -16,7 +15,7 @@ export class GroupService{
   Token =  this.authService.getToken();
 
   getGroups(){
-    
+    console.log("aaaaaaaaaaafdfffff","ds");
     return this.http.get ( this.APP_URL +'groups' , {
       headers: {  "Authorization": "Bearer "+this.Token}
     }).
@@ -42,13 +41,14 @@ export class GroupService{
   addGroup(newGroup : string){
 
     const body =  ({ description: newGroup });
-    return this.http.post( this.APP_URL +'groups',  (body),{
-        headers: { "Authorization": "Bearer "+this.Token }
-    });
+        return this.http.post( this.APP_URL +'groups',  (body),{
+            headers: { "Authorization": "Bearer "+this.Token }
+        });
   }
   
   addGroupMember(newGroupMember : any,groupId: number){
-              
+    
+    console.log("Data",newGroupMember);           
     return this.http.post( this.APP_URL +'groups/'+groupId+'/members',  ( newGroupMember),{
       headers: { "Authorization": "Bearer "+this.Token }
     });  
@@ -62,7 +62,6 @@ export class GroupService{
   }
 
   deleteGroupMember(id:number,email:string){ 
-
     return this.http.delete( this.APP_URL+'groups/'+id+"/members/"+email,{
       headers: {  "Authorization": "Bearer "+this.Token }
     });

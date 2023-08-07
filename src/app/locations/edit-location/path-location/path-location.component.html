@@ -1,5 +1,5 @@
 
-<button (click)="open(modalPathLocation)"   class="btn edit_model_button btn_site">View/Edit Sync Site</button>
+<button (click)="open(modalSitePathLocation)"   class="btn edit_model_button btn_site">View/Edit Sync Site</button>
 
 <ng-template #modalPathLocation let-modal  >
 
@@ -56,7 +56,7 @@
         <div class="row form-group">
             <div class="col-md-12 col-sm-12 col-md-12">
                 <span>Path</span>
-                <input type="text" name="search" class="form-control  browser-input"  placeholder="Share Point" [(ngModel)]="LocationPathInfo.sync_path"   >
+                <input type="text" name="search" class="form-control  browser-input"  placeholder="Enter your path here" [(ngModel)]="LocationPathInfo.sync_path"   >
                 <!--<label class="btn custom-file-upload">
                   <input type="file" (change)="uploadSystemFile($event)" name="file" class="browser-file" />
                   Browser
@@ -68,17 +68,17 @@
             <div class="col-md-12 note_text"><span>NOTE: where possible use full UNC paths e.g <br>\\server27\projects\Singapore\JO665 - Bay View </span> </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12">
                 <img id="checked"   height="20" src = "./../assets/images/checkbox-checked-outline.svg" alt="logo"/>
                 <span> Separate into folders per year e.g ..\2025, ..2026, etc.</span>
             </div>
-        </div>
+        </div> -->
 
         <div class="row modal-footer">
             <div class="col-md-12 ">
                 <button type="button" class="btn btn-primary modal-btn  float-right"  (click)="modal.dismiss('Cross click')">Cancel</button>
-                <button type="button" class="btn btn-primary  modal-btn float-right"  (click)="AddSystemFile()">Add</button>
+                <button type="button" class="btn btn-primary  modal-btn float-right"  (click)="AddSystemFileAndSave()">OK</button>
             </div>
         </div>
     </div>

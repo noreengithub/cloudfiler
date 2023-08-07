@@ -33,8 +33,10 @@ export class AddMemberComponent implements OnInit {
     this.AllGroupCopy =   (this.allGroups);
     this.AllMembersCopy =   (this.allUserLists);
 
-    console.log("sssssssss",this.AllMembersCopy);
+    console.log("sssssssss",this.selectedGroup);
     console.log("aaaaa",this.allGroups);
+    console.log("bb",this.allUserLists);
+    console.log("bbb",this.AllMembersCopy);
   }
 
   open(content:any) {
@@ -105,6 +107,10 @@ export class AddMemberComponent implements OnInit {
   }
 
   filterMembers(value:string){ 
+    console.log("zz", value,this.allUserLists,this.AllMembersCopy);
+    if (this.AllMembersCopy.length == 0) {
+      this.AllMembersCopy =   (this.allUserLists);
+    }
     if( value!==undefined && value!='' && value !=null) {
       this.allUserLists = this.AllMembersCopy.filter((member: any) =>
       member.email.toLowerCase().includes(value.toLowerCase())

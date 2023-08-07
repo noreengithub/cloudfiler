@@ -14,6 +14,7 @@ export class AddLocationComponent implements OnInit {
   locationDescription !: string;
   locationError=false;
   userInfo : any;
+  userDetail : any;
   is_manager:any = false;
   @Output() locationToAdd = new EventEmitter<string>();
   constructor(private modalService: NgbModal,private locationService:LocationService, private userService:UserService) {
@@ -25,6 +26,7 @@ export class AddLocationComponent implements OnInit {
       this.userInfo = data;
       this.is_manager= this.userInfo.is_manager;
     });
+    this.userDetail = this.userService.getUserData();
   }
 
   open(content:any) {

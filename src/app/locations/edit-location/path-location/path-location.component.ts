@@ -69,6 +69,14 @@ export class PathLocationComponent implements OnInit {
     this.modalSynPathRef.close();
   }
 
+  AddSystemFileAndSave(){
+
+    this.modalSynPathRef.close();
+    if(this.LocationPathInfo.path !=''){
+      this.LocationFile.emit( this.LocationPathInfo );
+    }
+  }
+
   SaveLocationFile(){
 
     if(this.LocationPathInfo.path !=''){

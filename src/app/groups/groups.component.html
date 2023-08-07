@@ -1,4 +1,4 @@
-<div class="row ">
+<div *ngIf="this.userDetail?this.userDetail.is_admin:false||this.userDetail?this.userDetail.is_manager:false" class="row ">
   <div class="col-sm-7 col-xs-10">
     <img width="50" height="50" src="./../assets/images/Group.svg" class="w_sm_32" alt="logo" />
     <div class="title-div">
@@ -27,10 +27,11 @@
       </li> -->
       <li *ngFor="let group of groups;"  class="nav-item" [ngClass]="{'active': group.group_id==activeGroup}" (click)="clickGroup(group.group_id)">
         <a class="nav-link" id="legalteam-tab" data-toggle="tab"  href="#{{group.description}}" role="tab" aria-controls="legalteam"
-          aria-selected="false"  >{{  group.description }}
-          <div class="icons">
+          aria-selected="false"  *ngIf="userDetail.is_admin&&group.group_id==0||group.group_id>0" >{{  group.description }}
+          <div *ngIf="group.group_id > 0" class="icons">
             <app-edit-group (groupToEdit)="editGroup($event)" [selectedGroup]="group"></app-edit-group>
 
+            <!-- <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroup(group.group_id)"> -->
             <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroup(group.group_id)">
           </div>
          </a>
@@ -83,51 +84,23 @@
           <div class="d_flex">
             <img _ngcontent-uyg-c115="" width="50" height="50" src="./../assets/images/Group.svg" alt="logo">
               <h4>{{selectGroup.description}} </h4>
-              <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroup(activeGroup)">
+              <!-- <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroup(activeGroup)"> -->
            </div>
-           <div *ngIf="selectGroup.users.length > 0" >
-              <div  class="d_flex"  *ngFor="let group_members of selectGroup.users"  >
+           <div *ngIf="selectGroup.users.length > 0" class="group_users" >
+              <div  class="d_flex "  *ngFor="let group_members of selectGroup.users"  >
                 <h4>{{group_members.email}}</h4>
-                <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroupMember(group_members.email)">
+                <!-- <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroupMember(group_members.email)"> -->
               </div>
            </div>
 
            <div class="add_group_btn"><app-add-member  [allGroups]="groups" [allUserLists]="userLists" [selectedGroup]="selectGroup"  [selectedMembers]="selectGroup.users" (groupMemberToAdd)="addMember($event)"></app-add-member> </div>
         </div>
        </div>
-      </div>
-      
-      <!-- <div  class="tab-pane fade" id="legalteam" role="tabpanel" aria-labelledby="legalteam-tab">
-        Legal Team tab
-      </div>
-      <div class="tab-pane fade" id="hrteam" role="tabpanel" aria-labelledby="hrteam-tab">
-        HR Team tab
-
-      </div>
-      <div class="tab-pane fade" id="Partners" role="tabpanel" aria-labelledby="Partners-tab">
-        Partners tab
-
-      </div>
-      <div class="tab-pane fade" id="ProjectManagers" role="tabpanel" aria-labelledby="ProjectManagers-tab">
-        Project Managers tab
-
-      </div>
-      <div class="tab-pane fade" id="All" role="tabpanel" aria-labelledby="All-tab">
-        All Tab
-      </div> -->
+      </div> 
     </div>
   </div>
   <!-- /.col-md-8 -->
-</div>
-<!-- <div class="row group-content">
-  <div class="col-md-6 group-first-section">
-
-  </div>
-  <div class="col-md-6 group-second-section">
-    df
-  </div>
-</div> -->
-
+</div> 
 <!--table row -->
 <div class="row  ">
   <div class="col-md-12  ">

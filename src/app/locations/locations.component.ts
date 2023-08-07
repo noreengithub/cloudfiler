@@ -28,19 +28,24 @@ export class LocationsComponent implements OnInit {
   clickedGroup:any;
   userInfo : any;
   is_manager:any = false;
+  is_admin:any = false;
 
   permissionsObj = [
     {
-      "key" : "user",
+      "key" : "None",
+      "value" : "None",
+    },
+    {
+      "key" : "User",
       "value" : "User",
     },
     {
-      "key" : "admin",
-      "value" : "Admin",
+      "key" : "Config",
+      "value" : "Config",
     },
     {
-      "key" : "none",
-      "value" : "None",
+      "key" : "Full",
+      "value" : "Full",
     }
     ] ;
 
@@ -48,17 +53,22 @@ export class LocationsComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.userInfo = this.userService.getUserData();
+    this.is_manager = this.userInfo.is_manager || this.userInfo.is_admin;
+    this.is_admin = this.userInfo.is_admin;
+
+    // this.userService.data$.subscribe(data => {
+    //   this.userInfo = data;
+    //   this.is_manager = this.userInfo.is_manager || this.userInfo.is_admin;
+    // });
       this.locationService.getLocations().subscribe(locations => {
           this.locations = locations.results;
           this.locationsPermanent = locations.results;
           this.totalLocations=locations.total;
+          // this.is_manager = this.userInfo.is_manager || this.userInfo.is_admin;
       });
       this.groupService.getGroups().subscribe(groups => {
          this.groups = groups;
-      });
-      this.userService.data$.subscribe(data => {
-        this.userInfo = data;
-        this.is_manager= this.userInfo.is_manager;
       });
 
 
@@ -143,8 +153,14 @@ export class LocationsComponent implements OnInit {
     }
   }
 
-  editLocation(locationId:any){
+  editLocation(locationId:any,canManage:boolean){
+    if (canManage) {
       this.clickLocation = locationId;
+    }
+    else
+    {
+      this.clickLocation = null;
+    }
 
   }
 

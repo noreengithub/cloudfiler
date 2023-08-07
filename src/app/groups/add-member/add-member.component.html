@@ -1,5 +1,5 @@
 <a class="add_group" (click)="open(modalData)"> <img width="20" height="20"
-    src="./../assets/images/plus-square-grey.svg" alt="logo" /> <span class="icon_text"> Add a member</span></a>
+    src="./../assets/images/plus-square-grey.svg" alt="logo" /> <span class="icon_text"> Edit group members</span></a>
 
 
     
@@ -24,42 +24,47 @@
           <input  [ngClass]="{  'in-valid': memberError } "   [(ngModel)]="memberDescription" type="text" class="form-control" name="location" id="InputLocation" aria-describedby="emailHelp" placeholder="Enter Group Member Name">
         </div> -->
       
-      <div class="people_div">
-        <div class="people_heading">
-          <h5>Groups</h5>
-          <div class="filter_input">
-            <input type="text" placeholder="Type here to filter" [(ngModel)]="searchGroup" (input)="filterGroup(searchGroup)" name="groups" >
-            <img src="./../assets/images/filter-grey-outline.svg" alt="logo">
+        <div *ngIf="false">
+          <div class="people_div" *ngIf="false">
+            <div class="people_heading">
+              <h5>Groups</h5>
+              <div class="filter_input">
+                <input type="text" placeholder="Type here to filter" [(ngModel)]="searchGroup" (input)="filterGroup(searchGroup)" name="groups" >
+                <img src="./../assets/images/filter-grey-outline.svg" alt="logo">
+              </div>
+            </div>            
+            <div class="emaillist  " *ngFor="let group of allGroups;let i = index;" >
+              <img _ngcontent-gjg-c120=""  [ngClass]="group.group_id == selectedGroup.id?'checked':'unchecked'" 
+              [src]=" group.group_id == selectedGroup.id?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
+              alt="logo"  >
+              <span>
+                {{group.description}}
+              </span> 
+            </div>  
           </div>
-        </div>            
-        <div class="emaillist  " *ngFor="let group of allGroups;let i = index;" >
-          <img _ngcontent-gjg-c120=""  [ngClass]="group.group_id == selectedGroup.id?'checked':'unchecked'" 
-          [src]=" group.group_id == selectedGroup.id?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
-          alt="logo"  >
-          <span>
-            {{group.description}}
-          </span> 
-        </div>  
-      </div>
+        </div>
 
-      <div class="people_div">
+      <div>
         <div class="people_heading">
           <h5>People</h5>
-         <div class="filter_input">
-          <input type="text" placeholder="Type here to filter" [(ngModel)]="searchMember" (input)="filterMembers(searchMember)" name="members">
-          <img src="./../assets/images/filter-grey-outline.svg" alt="logo">
-         </div>
-        </div>            
-        
-      <div class="emaillist  " *ngFor="let user of allUserLists;let i = index;" >
-        <img _ngcontent-gjg-c120=""  [ngClass]="checkedImage(user.email)?'checked':'unchecked'" 
-        [src]="checkedImage(user.email)?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
-         alt="logo" (click)="clickMember(user,checkedImage(user.email))">
-        <span>
-          {{user.email}}
-         </span>
-
-      </div>
+          <div class="filter_input">
+            <input type="text" placeholder="Type here to filter" [(ngModel)]="searchMember"
+              (input)="filterMembers(searchMember)" name="members">
+            <img src="./../assets/images/filter-grey-outline.svg" alt="logo">
+          </div>
+        </div>
+        <div class="people_div">
+      
+          <div class="emaillist  " *ngFor="let user of allUserLists;let i = index;">
+            <img _ngcontent-gjg-c120="" [ngClass]="checkedImage(user.email)?'checked':'unchecked'"
+              [src]="checkedImage(user.email)?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
+              alt="logo" (click)="clickMember(user,checkedImage(user.email))">
+            <span>
+              {{user.email}}
+            </span>
+      
+          </div>
+        </div>
         
       <!-- <div class="emaillist">
         <img _ngcontent-gjg-c120=""

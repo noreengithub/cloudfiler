@@ -8,48 +8,16 @@ import {Router} from "@angular/router";
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class DefaultSettingsService {
 
   constructor(private http:HttpClient , private authService :AuthService,private router: Router) { }
   APP_URL = this.authService.getBaseURl();
   token =  this.authService.getToken();
-  private userData = new Subject<any>(); 
 
-  data$ = this.userData.asObservable();
-
-  updateUserData(data: any) {
-    console.log("===============");
-    console.log(data.is_manager);   
-  }
-
-  getUserData(){
-    return this.authService.getUserData();
-  }
-
-  getAllUsers(){
-
-    this.token = this.authService.getToken();
-    return this.http.get ( this.APP_URL +'users' , {
-      headers: {  "Authorization": "Bearer "+this.token}
-    }).
-    pipe(
-      map( (responseData:any) => {
-        return   responseData;
-      })
-    );
-  }
-
-  checkUserAuthication(toke:any){
-    
-    return this.http.get ( this.APP_URL + 'user' , {
-      headers: {  "Authorization": "Bearer "+ toke}
-    }); 
-  }
-
-  userPreferences(){
+  defaultSettings(){
     this.token = this.authService.getToken();
     
-    return this.http.get ( this.APP_URL +'users/preferences' , {
+    return this.http.get ( this.APP_URL +'default/preferences' , {
       headers: {  "Authorization": "Bearer "+this.token}
     }).
     pipe(
@@ -69,7 +37,7 @@ export class UserService {
     body[key] = value;
     console.log(`updateSetting called with body: ${body}`);
 
-    return this.http.put ( this.APP_URL + 'users/preferences', body , {
+    return this.http.put ( this.APP_URL + 'default/preferences', body , {
       headers: {  "Authorization": "Bearer "+ this.token}
     }); 
   }

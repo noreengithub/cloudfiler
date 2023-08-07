@@ -22,6 +22,11 @@
   padding: 2rem 4rem;
   border-radius: 20px;
 }
+.group_users{
+    overflow-y: auto;
+    max-height: 245px;
+    overflow-x: hidden;
+}
 .custom_tab_content .d_flex {
   display: flex;
   align-items: center;

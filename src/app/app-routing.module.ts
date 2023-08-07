@@ -7,7 +7,7 @@ import {GroupsComponent} from "./groups/groups.component";
 import {PagenotfoundComponent} from "./pagenotfound/pagenotfound.component";
 import {AccessdeniedComponent} from "./accessdenied/accessdenied.component";
 import {LicenseComponent} from "./license/license.component";
-import {DefaultSettingsComponent} from "./default-settings/default-settings.component";
+import {SettingsComponent} from "./settings/settings.component";
 import {YoursettingsComponent} from "./yoursettings/yoursettings.component";
 import {YourprivatesettingsComponent} from "./yourprivatesettings/yourprivatesettings.component";
 import { ManagersComponent } from './managers/managers.component';
@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'managers', component: ManagersComponent ,canActivate:[AuthguardGuard]},
   { path: 'your-settings', component: YoursettingsComponent,canActivate:[AuthguardGuard]},
   { path: 'license', component: LicenseComponent,canActivate:[AuthguardGuard]},
-  { path: 'default-settings', component: DefaultSettingsComponent,canActivate:[AuthguardGuard]},
+  { path: 'settings', component: SettingsComponent,canActivate:[AuthguardGuard]},
   { path: 'your-private-settings', component: YourprivatesettingsComponent,canActivate:[AuthguardGuard]},
 
   { path: 'notfound', pathMatch: 'full',

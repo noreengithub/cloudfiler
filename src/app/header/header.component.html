@@ -3,14 +3,15 @@
     <div class="container-fluid">
       <div class="navbarwrap">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><h3 class="cloud">
+          <a class="navbar-brand" href="https://cloudfiler.io"><h3 class="cloud">
 
             <img width="40" height="40" src = "./../assets/images/Logo.svg" alt="logo"/>
             CloudFiler</h3></a>
         </div>
         <div class="text-center d_flex" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav  mr-auto middle_nav">
-            <li  class="nav-item  "><a href="#"  ><h4 class="setting"><img width="40" height="40" src = "./../assets/images/cog.svg" alt="logo"/> <span style=" opacity: 0.5;"> Settings & Administration </span></h4> </a></li>
+            <!-- <li  class="nav-item  "><a href="https://cloudfiler.io"  ><h4 class="setting"><img width="40" height="40" src = "./../assets/images/cog.svg" alt="logo"/> <span style=" opacity: 0.5;"> Settings & Administration </span></h4> </a></li> -->
+            <li  class="nav-item  "><a href="https://cloudfiler.io"  ><h4 class="setting"><img width="40" height="40" src = "./../assets/images/cog.svg" alt="logo"/> <span style=" opacity: 0.5;"> Settings</span><span style=" opacity: 0.5;" *ngIf="this.userDetail?this.userDetail.is_admin:false"> & Administration </span></h4> </a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right header-right-db">

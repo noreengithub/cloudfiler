@@ -24,6 +24,7 @@
 .location-table table thead th {
   background-color:#7030A0 !important;
   color:white !important;
+  z-index: 1;
 }
 
 .edit_location_td img{
@@ -35,8 +36,8 @@ tr:has(> td.edit_location_td) {
  /* border-radius: 20px !important;*/
 }
 
-.edit_location_tr:first-child td { border-top-left-radius: 10px; }
-.edit_location_tr:first-child td { border-top-right-radius: 10px; }
+/* .edit_location_tr:first-child td { border-top-left-radius: 10px; }
+.edit_location_tr:first-child td { border-top-right-radius: 10px; } */
 
 
 
@@ -84,3 +85,6 @@ tr:has(> td.edit_location_td) {
 
 
 
+.edit_location_tr>td.permission-class {
+  padding: 2px !important;
+}

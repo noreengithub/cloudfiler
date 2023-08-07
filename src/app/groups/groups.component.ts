@@ -10,6 +10,8 @@ import { UserService } from '../shared/user.service';
 })
 export class GroupsComponent implements OnInit {
 
+  userDetail: any ;
+  
   constructor(private groupService:GroupService, private userService : UserService) { }
 
   groups !: Group[];
@@ -18,15 +20,25 @@ export class GroupsComponent implements OnInit {
   userLists = []; 
 
   ngOnInit(): void {
+    this.userDetail = this.userService.getUserData();
+    // if (!this.userDetail.is_admin && !this.userDetail.is_manager) {
+    //   // redirect to /locations
+    // }
 
     this.groupService.getGroups().subscribe(groups => {
       
       this.groups = groups;
-      if(groups[0]){
-        this.activeGroup = groups[0].group_id;
-        console.log(groups[0]);
+      if(this.userDetail.is_admin && groups[1]){
+        this.activeGroup = groups[1].group_id;
+        //console.log(groups[1]);
         //this.selectGroup=groups[0];
-        this.clickGroup(groups[0].group_id);
+        this.clickGroup(groups[1].group_id);
+      }
+      else if(groups[2]){ // CF TODO: change this from groups[1] to groups[0];
+        this.activeGroup = groups[2].group_id;
+        //console.log(groups[2]);
+        //this.selectGroup=groups[0];
+        this.clickGroup(groups[2].group_id);
       }
     });
 
@@ -49,7 +61,7 @@ export class GroupsComponent implements OnInit {
       if(group.users.length>0){ 
         group.users.forEach((groupMember:any,index:any)=>{  
           this.groupService.deleteGroupMember(this.activeGroup,groupMember.email).subscribe(response => {
-              if(group.users.lengt == index+1 ){
+              if(group.users.length == index+1 ){
                 this.groupService.addGroupMember(newMebers,this.activeGroup).subscribe(()  => { 
                   console.log("single added"); 
                    this.clickGroup( this.activeGroup);
@@ -102,9 +114,8 @@ export class GroupsComponent implements OnInit {
   deleteGroupMember(groupMember:string){
     
     if(window.confirm('Are sure you want to delete this member?')){
-      
-      this.groupService.deleteGroupMember(this.activeGroup,groupMember).subscribe(() => {
-        this.clickGroup( this.activeGroup); 
+     this.groupService.deleteGroupMember(this.activeGroup,groupMember).subscribe(() => {
+       this.clickGroup( this.activeGroup); 
       });
     }
   }

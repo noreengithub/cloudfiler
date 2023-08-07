@@ -10,7 +10,8 @@ import {AuthService} from "../shared/auth.sevice";
 export class MenuComponent implements OnInit {
 
   permission:any = "manager";
-  selectedTab =  ""; 
+  selectedTab =  "";
+  userDetail: any ;
 
   constructor( private route: Router, private authService: AuthService) { }
 
@@ -18,12 +19,13 @@ export class MenuComponent implements OnInit {
     //this.permission = this.authService.getUserPermission;
     console.log("-----------");
     console.log( this.permission);
-    this.selectedTab = window.location.pathname.split('/')[1] ; 
+    this.selectedTab = window.location.pathname.split('/')[1] ;
+    console.log(this.selectedTab);
+    this.userDetail = this.authService.getUserData();
   }
 
   onSelect(feature:string ){
     this.route.navigate([feature],{ queryParams: {access_token: this.authService.getToken() }});
-    console.log();
   }
 
 }

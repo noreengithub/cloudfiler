@@ -8,7 +8,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class AuthService {
 
-  private BASE_URL = 'https://api-test.cloudfiler.io/';
+  private BASE_URL = 'https://api.cloudfiler.io/';
   //private token = "Bearer 8450b416-06e7-4dec-ae2e-52cb8166b275";
   private token = "";
   private user_permission="";

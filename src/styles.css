@@ -377,6 +377,12 @@ input:checked + .location_label {
   color: white !important;
 }
 
+.btn-white{
+  background-color: white !important;
+  /* border-color: #7030A0 !important; */
+  color: black !important;
+}
+
 /* .site_model_class .modal-dialog{
   right: 20%;
 } */
@@ -407,4 +413,16 @@ input:checked + .location_label {
   color: black;
   margin-left: 0.5rem;
   display: inline-block;
+}
+
+.warning {
+  color: red !important;
+}
+
+/* :read-only {
+  color: #A6A6A6 !important;
+} */
+.settings-row {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

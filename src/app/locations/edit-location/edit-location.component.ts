@@ -13,6 +13,7 @@ export class EditLocationComponent implements OnInit {
   closeModal='';
   showEditInput=false;
   purpleLocation:any ;
+  location_title = '';
   @Input() selectedLocation: any;
   @Input() clickedLocation: any;
 
@@ -34,6 +35,8 @@ export class EditLocationComponent implements OnInit {
 
       this.closeModal = `Dismissed ${this.getDismissReason(res)}`;
     });
+
+    this.location_title = this.selectedLocation.description;
 
     if(this.selectedLocation.type){
 
@@ -76,16 +79,18 @@ export class EditLocationComponent implements OnInit {
 
   onSaveLocationTitle(){
 
+    this.selectedLocation.description =  this.location_title;
     this.editLocationData.emit(this.selectedLocation);
     this.showEditInput=false;
   }
 
   onDeleteLocation(location:any ){
 
-    if(window.confirm('Are sure you want to delete this location?')){
-      this.locationToDelete.emit(location);
-      this.modalService.dismissAll();
-    }
+    //if(window.confirm('Are sure you want to delete this location?')){
+    //if(window.confirm('Are sure you want to delete this location?')){
+    this.locationToDelete.emit(location);
+    this.modalService.dismissAll();
+    //}
   }
 
   setArchive(){
