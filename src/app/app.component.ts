@@ -50,30 +50,21 @@ export class AppComponent {
   {
     
     const httpData = await this.userService.checkUserAuthication(token).toPromise().catch((error)=>{
-      this.hideMenu = true; 
-      this.tokeStatus = true;
-      console.log( this.tokeStatus); 
-      this.router.navigate(['/notfound'])
-      return false;
+        this.hideMenu = true; 
+        this.tokeStatus = true;
+        console.log( this.tokeStatus); 
+        this.router.navigate(['/notfound'])
+        return false;
     });
 
     if(httpData ){
-      this.tokeStatus = true; 
-      console.log("aaaaaaaaa",httpData);
-      this.authService.setToken(token); 
-      console.log("user",httpData);
+
+      this.tokeStatus = true;  
+      this.authService.setToken(token);  
      // this.authService.setUserPersmission(httpData['is_manager'] ? 'manager':'user');
       this.authService.setUserData(httpData);   
-     }//else{
-        
-        //this.router.navigate(['notfound']);
-    //}
-   
-   // this.userService.checkUserAuthication(token).subscribe(user => {
-   //   console.log("user",user);
-      //this.userDetail = user ;
-    //  this.userService.updateUserData(user); 
-    //});
+     }
+ 
   }
 
 }

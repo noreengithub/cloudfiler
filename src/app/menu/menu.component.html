@@ -19,8 +19,8 @@
 <input id="tab7" type="radio" name="tabs" [checked] ="selectedTab=='your-settings'">
 <label class="location_label last" for="tab7" (click)="onSelect('your-settings')" >Your Settings</label>
 
-<input *ngIf="this.userDetail?this.userDetail.is_admin:false" id="tab6" type="radio" name="tabs" [checked] ="selectedTab=='settings'">
-<label *ngIf="this.userDetail?this.userDetail.is_admin:false" class="location_label" for="tab6" (click)="onSelect('settings')" >Default Settings</label>
+<input *ngIf="this.userDetail?this.userDetail.is_admin:false" id="tab6" type="radio" name="tabs" [checked] ="selectedTab=='default-settings'">
+<label *ngIf="this.userDetail?this.userDetail.is_admin:false" class="location_label" for="tab6" (click)="onSelect('default-settings')" >Default Settings</label>
 
-<!-- <input id="tab8" type="radio" name="tabs" [checked] ="selectedTab=='your-private-settings'">
-<label class="location_label last" for="tab8" (click)="onSelect('your-private-settings')" >Your Private Location</label> -->
+ <input id="tab8" type="radio" name="tabs" [checked] ="selectedTab=='your-private-locations'">
+<label class="location_label last" for="tab8" (click)="onSelect('your-private-locations')" >Your Private Location</label> 

@@ -19,16 +19,15 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { LoadingInterceptor } from './loading.interceptor';
 import { GroupsComponent } from './groups/groups.component';
 import { AddGroupComponent } from './groups/add-group/add-group.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PagenotfoundComponent } from './page-not-found/pagenotfound.component';
 import { AccessdeniedComponent } from './accessdenied/accessdenied.component';
 import { LicenseComponent } from './license/license.component';
-import { PrivatesettingsComponent } from './privatesettings/privatesettings.component';
-import { SettingsComponent } from './settings/settings.component';
-import { YoursettingsComponent } from './yoursettings/yoursettings.component';
-import { YourprivatesettingsComponent } from './yourprivatesettings/yourprivatesettings.component';
+import { YoursettingsComponent } from './your-settings/yoursettings.component';
 import { AddMemberComponent } from './groups/add-member/add-member.component';
 import { EditGroupComponent } from './groups/edit-group/edit-group.component';
 import { ManagersComponent } from './managers/managers.component';
+import { CommonModule } from '@angular/common';
+import { YourPrivateLocationsComponent } from './your-private-locations/your-private-locations.component';
 
 
 @NgModule({
@@ -47,20 +46,19 @@ import { ManagersComponent } from './managers/managers.component';
       PagenotfoundComponent,
       AccessdeniedComponent,
       LicenseComponent,
-      PrivatesettingsComponent,
-      SettingsComponent,
       YoursettingsComponent,
-      YourprivatesettingsComponent,
       AddMemberComponent,
       EditGroupComponent,
-      ManagersComponent
+      ManagersComponent, 
+      YourPrivateLocationsComponent,
    ],
   imports: [
       BrowserModule,
       AppRoutingModule,
       NgbModule,
       FormsModule,
-      HttpClientModule
+      HttpClientModule,
+      CommonModule
   ],
   providers: [LocationService,GroupService,{
     provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true
