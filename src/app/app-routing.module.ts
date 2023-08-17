@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
-import { LocationsComponent } from "./locations/locations.component";
-import {AccountsComponent} from "./accounts/accounts.component";
-import {GroupsComponent} from "./groups/groups.component";
+import { LocationsComponent } from "./tab-components/locations/locations.component";
+import {AccountsComponent} from "./tab-components/accounts/accounts.component";
+import {GroupsComponent} from "./tab-components/groups/groups.component";
 import {PagenotfoundComponent} from "./page-not-found/pagenotfound.component";
 import {AccessdeniedComponent} from "./accessdenied/accessdenied.component";
-import {LicenseComponent} from "./license/license.component";
-import {YoursettingsComponent} from "./your-settings/yoursettings.component";
-import { ManagersComponent } from './managers/managers.component';
+import {LicenseComponent} from "./tab-components/license/license.component";
+import {YoursettingsComponent} from "./tab-components/your-settings/yoursettings.component";
+import { ManagersComponent } from './tab-components/managers/managers.component';
 import { AuthguardGuard } from "./shared/authguard.guard";
-import { DefaultSettingsComponent } from './default-settings/default-settings.component';
-import { YourPrivateLocationsComponent } from './your-private-locations/your-private-locations.component';
+import { DefaultSettingsComponent } from './tab-components/default-settings/default-settings.component';
+import { YourPrivateLocationsComponent } from './tab-components/your-private-locations/your-private-locations.component';
 
 const routes: Routes = [
   { path: '', component: LocationsComponent,canActivate:[AuthguardGuard] },

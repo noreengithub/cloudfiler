@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import {LocationService} from "./locations/location.service";
-import {GroupService} from "./shared/group.service";
-import {UserService} from "./shared/user.service";
+import {UserService} from "./services/user.service";
 import {ActivatedRoute, Router,RoutesRecognized,Event} from "@angular/router";
-import {AuthService} from "./shared/auth.sevice";
+import {AuthService} from "./services/auth.sevice";
 
 @Component({
   selector: 'app-root',

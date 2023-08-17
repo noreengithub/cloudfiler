@@ -1,0 +1,26 @@
+<!-- <input id="tab1" type="radio" name="tabs" [checked]="selectedTab=='license'"   >
+<label class="location_label" for="tab1" (click)="onSelect('license')">Licenses</label> -->
+
+<!-- <input id="tab10" type="radio" name="tabs" [checked] ="selectedTab=='managers'" *ngIf="permission!='manager'">
+<label class="location_label" for="tab10"  *ngIf="permission!='manager'" (click)="onSelect('managers')">Managers</label> -->
+
+<!-- <input id="tab3" type="radio" name="tabs" [checked] ="selectedTab=='accounts'">
+<label class="location_label" for="tab3" (click)="onSelect('accounts')">Accounts</label> -->
+
+<!-- <input id="tab4" type="radio" name="tabs" [checked] ="selectedTab=='locations'"  >
+<label class="location_label" for="tab4">Settings & Admin</label> -->
+
+<input id="tab5" type="radio" name="tabs" [checked] ="selectedTab=='locations' || selectedTab==''">
+<label class="location_label" for="tab5"  (click)="onSelect('locations')" >Locations</label>
+
+<input *ngIf="this.userDetail?this.userDetail.is_admin||this.userDetail.is_manager:false" id="tab9" type="radio" name="tabs" [checked] ="selectedTab=='groups'" >
+<label *ngIf="this.userDetail?this.userDetail.is_admin||this.userDetail.is_manager:false" class="location_label" for="tab9"  (click)="onSelect('groups')">Groups</label>
+
+<input id="tab7" type="radio" name="tabs" [checked] ="selectedTab=='your-settings'">
+<label class="location_label last" for="tab7" (click)="onSelect('your-settings')" >Your Settings</label>
+
+<input *ngIf="this.userDetail?this.userDetail.is_admin:false" id="tab6" type="radio" name="tabs" [checked] ="selectedTab=='default-settings'">
+<label *ngIf="this.userDetail?this.userDetail.is_admin:false" class="location_label" for="tab6" (click)="onSelect('default-settings')" >Default Settings</label>
+
+<input id="tab8" type="radio" name="tabs" [checked] ="selectedTab=='your-private-locations'">
+<label class="location_label last" for="tab8" (click)="onSelect('your-private-locations')" >Your Private Location</label> 

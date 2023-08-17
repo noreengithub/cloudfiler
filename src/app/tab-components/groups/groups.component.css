@@ -1,0 +1,112 @@
+.group-second-section {
+  background-color: #d4bee5 !important;
+  border-color: #d4bee5 !important;
+  height: 400px;
+}
+.location-row1 .location-span {
+  margin-left: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.group-first-section {
+  height: 400px;
+}
+
+.group-content {
+  height: 400px;
+}
+
+.nav-pills > li {
+  width: 100%;
+}
+.custom_tab_content {
+  background-color: #d4bee5;
+  border-color: #d4bee5;
+  height: 400px;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+.group_users{
+    overflow-y: auto;
+    max-height: 245px;
+    overflow-x: hidden;
+}
+.custom_tab_content .d_flex {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #b192c8;
+}
+.custom_tab_content .d_flex img {
+  width: 30px;
+}
+.custom_tab_content .d_flex .ml-auto {
+  margin-left: auto;
+}
+.custom_tab_content .d_flex h4 {
+  margin-left: 1rem;
+  word-break: break-all;
+}
+.add_group_btn {
+  position: absolute;
+  bottom: 0;
+}
+.h_100 {
+  height: 100%;
+}
+
+.add_group_btn .add_group .icon_text {
+  font-size: 16px;
+  color: black;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+.group_tabs {
+  overflow-y: auto;
+  max-height: 400px;
+  overflow-x: hidden;
+}
+.group_tabs.nav-pills>li>a .icons img{
+  width: 25px;
+  height: 25px;
+  margin-right: 1.5rem;
+}
+.group_tabs.nav-pills>li>a .icons{
+  display: none;
+}
+.group_tabs.nav-pills>li>a{
+  color: #333;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.group_tabs.nav-pills>li.active>a .icons, .group_tabs.nav-pills>li.active>a:focus .icons, .group_tabs.nav-pills>li.active>a:hover .icons{
+  display: block;
+}
+.group_tabs.nav-pills>li.active>a, .group_tabs.nav-pills>li.active>a:focus, .group_tabs.nav-pills>li.active>a:hover{
+  background-color: #d4bee5;
+  color: #333;
+}
+.mt_3{
+  margin-top: 3rem;
+}
+.mt_2{
+  margin-top: 2rem;
+}
+.mb_2{
+  margin-bottom: 2rem;
+}
+.p-0{
+  padding: 0;
+}
+.pr-0{
+  padding-right: 0;
+}
+.pl-0{
+  padding-left: 0;
+}
