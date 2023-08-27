@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GroupService } from '../../services/group.service';
 import {Group} from "../../shared/group.model";
 import { UserService } from '../../services/user.service';
+import { ConfirmDeleteModelService } from 'src/app/services/confirm-delete-model.service';
 
 @Component({
   selector: 'app-groups',
@@ -12,7 +13,7 @@ export class GroupsComponent implements OnInit {
 
   userDetail: any ;
   
-  constructor(private groupService:GroupService, private userService : UserService) { }
+  constructor(private confirmationDeleteModelService: ConfirmDeleteModelService ,private groupService:GroupService, private userService : UserService) { }
 
   groups !: Group[];
   activeGroup : any;
@@ -134,6 +135,27 @@ export class GroupsComponent implements OnInit {
       });
     });
      
+  }
+
+  public openConfirmationDeleteDialog(group: any) {
+    this.confirmationDeleteModelService.confirm('Confirm Delete?','Are sure you want to delete this group?',group.description, 'Cancel','Delete')
+    .then((confirmed) => {
+      if(confirmed){
+        this.groupService.deleteGroup(group.group_id).subscribe(groups => {
+          this.groupService.getGroups().subscribe(groups => {
+          
+            this.groups = groups;
+            if(groups[0]){
+              this.activeGroup = groups[groups.length -1].group_id;
+              this.clickGroup( this.activeGroup);
+               
+            }
+          });
+        });
+      }
+    console.log('User confirmed:', confirmed)
+    })
+    .catch(() => console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
   }
 
 }

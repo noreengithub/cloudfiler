@@ -22,7 +22,7 @@ export class EditLocationComponent implements OnInit {
   @Output() locationToDelete = new EventEmitter<string>();
   @Output() editLocationData = new EventEmitter<string>();
   @Output() parentClicklocation = new EventEmitter<string>();
-  constructor(private confirmationDialogService: ConfirmDeleteModelService ,private modalService: NgbModal,private locationService:LocationService) {}
+  constructor(private confirmationDeleteModelService: ConfirmDeleteModelService ,private modalService: NgbModal,private locationService:LocationService) {}
 
   ngOnInit(): void {
 
@@ -140,7 +140,7 @@ export class EditLocationComponent implements OnInit {
   }
 
   public openConfirmationDeleteDialog(location: any) {
-    this.confirmationDialogService.confirm('Confirm Delete?','Are sure you want to delete this location?',location.description, 'Cancel','Delete')
+    this.confirmationDeleteModelService.confirm('Confirm Delete?','Are sure you want to delete this location?',location.description, 'Cancel','Delete')
     .then((confirmed) => {
       if(confirmed){
         this.locationToDelete.emit(location.location_id);

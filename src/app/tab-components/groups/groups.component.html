@@ -16,15 +16,7 @@
 <div class="row">
   <div class="col-md-5 mb_3 p-0">
     <ul class="nav nav-pills flex-column group_tabs mt_2 mb_2" id="myTab" role="tablist">
-      <!-- <li  class="nav-item active">
-        <a class="nav-link active" id="mainboard-tab" data-toggle="tab" href="#mainboard" role="tab" aria-controls="mainboard"
-          aria-selected="true"> TEst
-          <div class="icons">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/edit.svg" alt="edit">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus">
-          </div>
-          </a>
-      </li> -->
+      
       <li *ngFor="let group of groups;"  class="nav-item" [ngClass]="{'active': group.group_id==activeGroup}" (click)="clickGroup(group.group_id)">
         <a class="nav-link" id="legalteam-tab" data-toggle="tab"  href="#{{group.description}}" role="tab" aria-controls="legalteam"
           aria-selected="false"  *ngIf="userDetail.is_admin&&group.group_id==0||group.group_id>0" >{{  group.description }}
@@ -32,47 +24,11 @@
             <app-edit-group (groupToEdit)="editGroup($event)" [selectedGroup]="group"></app-edit-group>
 
             <!-- <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroup(group.group_id)"> -->
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="deleteGroup(group.group_id)">
+            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus" (click)="openConfirmationDeleteDialog(group)">
           </div>
          </a>
-      </li>
-
-      <!-- <li class="nav-item">
-        <a class="nav-link" id="hrteam-tab" data-toggle="tab" href="#hrteam" role="tab" aria-controls="hrteam"
-          aria-selected="false"> HR Team
-          <div class="icons">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/edit.svg" alt="edit">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus">
-          </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="Partners-tab" data-toggle="tab" href="#Partners" role="tab" aria-controls="Partners"
-          aria-selected="false"> Partners
-          <div class="icons">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/edit.svg" alt="edit">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus">
-          </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="ProjectManagers-tab" data-toggle="tab" href="#ProjectManagers" role="tab" aria-controls="ProjectManagers"
-          aria-selected="false"> Project Managers
-          <div class="icons">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/edit.svg" alt="edit">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus">
-          </div>
-        </a>
-      </li>-->
-      <!-- <li class="nav-item">
-        <a class="nav-link" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="All"
-          aria-selected="false"> All
-          <div class="icons">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/edit.svg" alt="edit">
-            <img _ngcontent-uyg-c115="" width="50" height="50" class="ml-auto" src="./../assets/images/minus-square-grey.svg" alt="minus">
-          </div>
-        </a>
-      </li> -->
+      </li> 
+      
     </ul>
   </div>
   <!-- /.col-md-4 -->
