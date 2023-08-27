@@ -29,8 +29,8 @@ import { ManagersComponent } from './tab-components/managers/managers.component'
 import { CommonModule } from '@angular/common';
 import { YourPrivateLocationsComponent } from './tab-components/your-private-locations/your-private-locations.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { DeleteModalComponent } from './common/delete-modal/delete-modal.component';
+import { ConfirmDeleteModelComponent } from './common/confirm-delete-model/confirm-delete-model.component';
+import { ConfirmDeleteModelService } from './services/confirm-delete-model.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +53,7 @@ import { DeleteModalComponent } from './common/delete-modal/delete-modal.compone
       EditGroupComponent,
       ManagersComponent, 
       YourPrivateLocationsComponent,
-      DeleteModalComponent
+      ConfirmDeleteModelComponent
    ],
   imports: [
       BrowserModule,
@@ -63,12 +63,12 @@ import { DeleteModalComponent } from './common/delete-modal/delete-modal.compone
       HttpClientModule,
       CommonModule,
       BrowserAnimationsModule,
-      MatDialogModule,
    ],
-  providers: [LocationService,GroupService,{
+  providers: [ConfirmDeleteModelService,LocationService,GroupService,{
     provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true
   }],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }

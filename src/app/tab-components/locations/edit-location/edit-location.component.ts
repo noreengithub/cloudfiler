@@ -2,6 +2,7 @@ import { Component, OnInit ,Input,Output,EventEmitter } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import {LocationService} from "../../../services/location.service";
 import {UserService} from "../../../services/user.service";
+import { ConfirmDeleteModelService } from 'src/app/services/confirm-delete-model.service';
 
 @Component({
   selector: 'app-edit-location',
@@ -21,7 +22,7 @@ export class EditLocationComponent implements OnInit {
   @Output() locationToDelete = new EventEmitter<string>();
   @Output() editLocationData = new EventEmitter<string>();
   @Output() parentClicklocation = new EventEmitter<string>();
-  constructor(private modalService: NgbModal,private locationService:LocationService) {}
+  constructor(private confirmationDialogService: ConfirmDeleteModelService ,private modalService: NgbModal,private locationService:LocationService) {}
 
   ngOnInit(): void {
 
@@ -88,8 +89,7 @@ export class EditLocationComponent implements OnInit {
 
     //if(window.confirm('Are sure you want to delete this location?')){
     //if(window.confirm('Are sure you want to delete this location?')){
-    this.locationToDelete.emit(location);
-    this.modalService.dismissAll();
+    
     //}
   }
 
@@ -137,5 +137,17 @@ export class EditLocationComponent implements OnInit {
 
   highlightLocation(locationId:any){
     this.purpleLocation=locationId;
+  }
+
+  public openConfirmationDeleteDialog(location: any) {
+    this.confirmationDialogService.confirm('Confirm Delete?','Are sure you want to delete this location?',location.description, 'Cancel','Delete')
+    .then((confirmed) => {
+      if(confirmed){
+        this.locationToDelete.emit(location.location_id);
+        this.modalService.dismissAll();
+      }
+    console.log('User confirmed:', confirmed)
+    })
+    .catch(() => console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
   }
 }
