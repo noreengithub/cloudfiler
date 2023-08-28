@@ -40,11 +40,11 @@
     </div>
     <div class="row edit-model-line">
       <div class="col-md-4 col-sm-6" > <img width="30" height="30" src = "./../assets/images/sub-folder.svg" alt="logo"/><span class="text-title">Sub Locations </span></div>
-      <div class="col-md-8 col-sm-6"> <button class="btn  edit_model_button" (click)="openSmallModel(modalImplement)">View/Edit Sub-locations</button></div>
+      <div class="col-md-8 col-sm-6"> <button class="btn  edit_model_button" (click)="openNotImplementDialog( )"  >View/Edit Sub-locations</button></div>
     </div>
     <div class="row edit-model-line">
       <div class="col-md-4 col-sm-6"><img width="30" height="30" src = "./../assets/images/eye.svg" alt="logo"/><span class="text-title">Who has access</span></div>
-      <div class="col-md-8 col-sm-6"> <button class="btn edit_model_button" (click)="openSmallModel(modalImplement)">See who’s permissions allows them access to this location</button></div>
+      <div class="col-md-8 col-sm-6"> <button class="btn edit_model_button" (click)="openNotImplementDialog( )" >See who’s permissions allows them access to this location</button></div>
     </div>
     <div class="row edit-model-line">
       <div class="col-md-4 col-sm-6"><img width="30" height="30" src = "./../assets/images/padlock.svg" alt="logo"/> <span class="text-title">Confidentiality</span></div>
@@ -81,19 +81,4 @@
 </div>
  
 </ng-template>
-
-<ng-template #modalImplement let-modal  >
-  <div class="not-implemented">
-    <div class="modal-body">
-      <div class="row">
-        <div class="col-md-12">
-          <img width="40" height="40" src = "./../assets/images/rench2.png" alt="logo" style="margin-top: -2px;"/>
-          <span style="margin-left: 10px"><b>Not yet implemented</b></span></div>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-primary add-location-close"  (click)="modal.dismiss('Cross click')">Close</button>
-    </div>
-  </div>
-</ng-template>
-
+ 

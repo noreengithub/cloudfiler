@@ -1,0 +1,40 @@
+ <div   [ngClass]="typeModal=='Delete'?'site_model':'not-implemented' "   >
+    <div class="modal-header" style="border-bottom:unset">
+        <div class="row location-header">
+            <div class="col-md-12 head"> 
+                <img src="./../../../assets/images/{{image}}" width="35" height="35" alt="logo"/>
+                <span class="title" style="margin-left: 10px"><b>{{ title}}</b></span>
+                <a *ngIf="typeModal=='Delete'" target="_blank" href="https://help.cloudfiler.io/">
+                    <img class="float-right " width="28" height="28" src = "./../assets/images/Help-black.svg" alt="help" />
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-body"  style="margin-left: 1%;">
+        <div class="row" *ngIf="message">
+            <div class="col-md-12 note_text">
+            <span>
+                {{ message }}
+            </span>
+            </div>
+            <div *ngIf="secondMessage" class="col-md-12 note_text">
+            <span>
+                {{ secondMessage }}
+            </span>
+            </div>
+        </div>
+        
+        <div class="row modal-footer">
+            <div class="col-md-12 ">
+                <button type="button" class="btn btn-primary modal-btn  float-right" (click)="decline()" >{{ btnCancelText }}</button>
+                <button *ngIf="btnOkText" type="button" class="btn btn-primary  modal-btn float-right"  (click)="accept()" >{{ btnOkText }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+     
+   
+    

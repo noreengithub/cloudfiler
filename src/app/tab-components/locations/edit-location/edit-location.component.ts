@@ -1,8 +1,7 @@
 import { Component, OnInit ,Input,Output,EventEmitter } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import {LocationService} from "../../../services/location.service";
-import {UserService} from "../../../services/user.service";
-import { ConfirmDeleteModelService } from 'src/app/services/confirm-delete-model.service';
+import { DialogModalService } from 'src/app/services/dialog-modal.service';
 
 @Component({
   selector: 'app-edit-location',
@@ -22,7 +21,7 @@ export class EditLocationComponent implements OnInit {
   @Output() locationToDelete = new EventEmitter<string>();
   @Output() editLocationData = new EventEmitter<string>();
   @Output() parentClicklocation = new EventEmitter<string>();
-  constructor(private confirmationDeleteModelService: ConfirmDeleteModelService ,private modalService: NgbModal,private locationService:LocationService) {}
+  constructor(private dialogModalService: DialogModalService ,private modalService: NgbModal,private locationService:LocationService) {}
 
   ngOnInit(): void {
 
@@ -49,16 +48,7 @@ export class EditLocationComponent implements OnInit {
       (<HTMLInputElement>document.getElementById("unchecked")).style.display='inline';
     }
   }
-
-  openSmallModel(content:any) {
-
-    this.modalService.open(content, { size: 'sm', backdrop: 'static' ,ariaLabelledBy: 'modal-basic-title'}).result.then((res) => {
-      this.closeModal = `Closed with: ${res}`;
-    }, (res) => {
-
-      this.closeModal = `Dismissed ${this.getDismissReason(res)}`;
-    });
-  }
+ 
 
   private getDismissReason(reason: any): string {
     this.clickedLocation = 0;
@@ -139,14 +129,25 @@ export class EditLocationComponent implements OnInit {
     this.purpleLocation=locationId;
   }
 
-  public openConfirmationDeleteDialog(location: any) {
-    this.confirmationDeleteModelService.confirm('Confirm Delete?','Are sure you want to delete this location?',location.description, 'Cancel','Delete')
+  openConfirmationDeleteDialog(location: any) {
+    this.dialogModalService.confirm('Delete','Confirm Delete?','Are sure you want to delete this location?',location.description, 'Cancel','Delete')
     .then((confirmed) => {
       if(confirmed){
         this.locationToDelete.emit(location.location_id);
         this.modalService.dismissAll();
       }
-    console.log('User confirmed:', confirmed)
+
+      console.log('User confirmed:', confirmed)
+    })
+    .catch(() => console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
+  }
+
+  openNotImplementDialog(){
+    this.dialogModalService.confirm('NotImplement','Not yet implemented','','', 'Close','')
+    .then((confirmed) => {
+      if(confirmed){ 
+      } 
+      console.log('User confirmed:', confirmed)
     })
     .catch(() => console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
   }
