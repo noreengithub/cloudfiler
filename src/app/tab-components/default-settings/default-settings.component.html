@@ -1,8 +1,8 @@
 <div class="listingtab" style="width: 100%; font-size: 19px !important;">
     <div class="row">
-        <div class="col-md-12 col-sm-12">   
-            <div class=" " id="location" role="tabpanel" aria-labelledby="location-tab"> 
-  
+        <div class="col-md-12 col-sm-12">
+            <div class=" " id="location" role="tabpanel" aria-labelledby="location-tab">
+
                 <div class="row location-row1">
 
                     <div class="col-sm-8 col-xs-10">
@@ -10,7 +10,7 @@
                             <img class="w_sm_32" width="50" height="50" src="./../assets/images/cog.svg" alt="logo" /><span class="location-span title">Default  settings</span>
                         </div>
                     </div>
-        
+
                     <div class="col-sm-1 col-xs-1" style="float: right;">
                         <a target="_blank" href="https://help.cloudfiler.io/"><img class="float-right help_image " width="40" height="40"
         src="./../assets/images/Help-black.svg" alt="help" /></a>
@@ -23,29 +23,29 @@
                         <div class="note">NOTE: These settings will be applied to all new users</div>
                     </div>
                 </div>
-            
+
                 <div class="row">
                     <div class="uponfile">
-                    
+
                         <div class="row">
-                            <span class="bold col-sm-7 col-xs-10">Upon Filing a message:</span> 
-                            <span class="col-sm-2 col-xs-10 m-7"> Prevent <br/> user edits  </span>  
+                            <span class="bold col-sm-7 col-xs-10">Upon Filing a message:</span>
+                            <span class="col-sm-2 col-xs-10 m-7"> Prevent <br/> user edits  </span>
                         </div>
-                            
+
                         <div class="setting_child_row ">
-            
-                            <div class="row settings-row show-data setting_dropdown"  > 
-                                <div class="col-sm-2 col-xs-12 " [class.disabled]=" defaultSetting?.addin_settings_move_filed_sent_messages_to_locked ">
+
+                            <div class="row settings-row show-data setting_dropdown"  >
+                                <div class="col-sm-2 col-xs-12 text-right" [class.disabled]=" defaultSetting?.addin_settings_move_filed_sent_messages_to_locked ">
                                     <span class="f">Sent messages:</span>
                                 </div>
-                
+
                                 <div class="col-sm-5 col-xs-10 ">
-                                    
-                                    <a   
+
+                                    <a
                                     class="dropdown-toggle user-email" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true"
                                     aria-expanded="false"
-                                    [class.disabled]=" defaultSetting?.addin_settings_move_filed_sent_messages_to_locked "  
-                                    > 
+                                    [class.disabled]=" defaultSetting?.addin_settings_move_filed_sent_messages_to_locked "
+                                    >
                                         {{ defaultSetting?.addin_settings_move_filed_sent_messages_to_value == "Filed"? "Move to 'Filed' folder" :
                                         defaultSetting?.addin_settings_move_filed_sent_messages_to_value == "Deleted Items" ? "Move to 'Deleted Items' folder" : "Leave message in its folder"}}
                                         <i class="fas fa-caret-down"></i>
@@ -53,23 +53,23 @@
                                     <ul class="dropdown-menu " id="filedSentMessageLocationDropdown">
                                         <li><a (click)="changeFiledSentMessageLocationSetting('None')">Leave message in its folder</a></li>
                                         <li><a (click)="changeFiledSentMessageLocationSetting('Filed')">Move to 'Filed' folder</a></li>
-                                        <li><a (click)="changeFiledSentMessageLocationSetting('Deleted Items')">Move to 'Deleted Items' folder</a></li> 
-                                    </ul>  
+                                        <li><a (click)="changeFiledSentMessageLocationSetting('Deleted Items')">Move to 'Deleted Items' folder</a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="col-sm-2 col-xs-12 ">
                                     <img _ngcontent-gjg-c120="" width="30" height="30"
                                     [src]="defaultSetting?.addin_settings_move_filed_sent_messages_to_locked   ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
                                     (click)="toggleLock('addin_settings_move_filed_sent_messages_to_locked')" alt="logo">
-                                </div>  
+                                </div>
 
                             </div><!--row end-->
-  
-                            <div class=" row settings-row show-data setting_dropdown" > 
-                                <div class="col-sm-2 col-xs-12 "  [class.disabled]=" defaultSetting?.addin_settings_move_filed_messages_to_locked ">
+
+                            <div class=" row settings-row show-data setting_dropdown" >
+                                <div class="col-sm-2 col-xs-12 text-right"  [class.disabled]=" defaultSetting?.addin_settings_move_filed_messages_to_locked ">
                                     <span>Other messages:</span>
                                 </div>
-                
+
                                 <div class="col-sm-5 col-xs-10 "   >
                                     <a class="dropdown-toggle user-email" data-toggle="dropdown"href="javascript:void(0)" role="button" aria-haspopup="true"
                                     [class.disabled]=" defaultSetting?.addin_settings_move_filed_messages_to_locked "
@@ -82,25 +82,30 @@
                                         <li><a (click)="changeFiledMessageLocationSetting('None')">Leave message in its folder</a></li>
                                         <li><a (click)="changeFiledMessageLocationSetting('Filed')">Move to 'Filed' folder</a></li>
                                         <li><a (click)="changeFiledMessageLocationSetting('Deleted Items')">Move to 'Deleted Items' folder</a></li>
-                                    </ul>  
+                                    </ul>
                                 </div>
 
                                 <div class="col-sm-2 col-xs-12 ">
                                     <img _ngcontent-gjg-c120="" width="30" height="30"
                                         [src]="defaultSetting?.addin_settings_move_filed_messages_to_locked ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
                                         (click)="toggleLock('addin_settings_move_filed_messages_to_locked')" alt="logo">
-                                </div>  
+                                </div>
 
-                            </div><!--row end--> 
-            
-                            <div class="row settings-row show-data setting_dropdown "> 
-                                <div class="col-sm-7 col-xs-12">
-                                    <img _ngcontent-gjg-c120="" width="30" height="30"  
+                            </div><!--row end-->
+
+                            <div class="row settings-row show-data setting_dropdown ">
+                                <div class="col-sm-2 col-xs-12 text-right"></div>
+                                <div class="col-sm-5 col-xs-12">
+                                    <img _ngcontent-gjg-c120="" width="30" height="30"
                                     [src]=" defaultSetting?.addin_settings_mark_filed_messages_subject_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
                                     (click)="markMessageSubject()" alt="logo">
-                    
+
                                     <span class="text-right-left-margin">Add filed date to Subject</span>
-                                    <div class="tooltipwrap">
+
+                                </div>
+
+                                <div class="col-sm-2 col-xs-12 ">
+                                    <div class="tooltipwrap mr-2">
                                         <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
                                         <span class="tooltiptext">
                                             <b> Checked behaviour:</b>
@@ -108,33 +113,33 @@
                                             The date is added to the message subject line in the format
                                             <b>
                                             [Filed on 2038-05-23]
-                                            </b>  
+                                            </b>
                                             <br />
                                             <b> Unchecked behaviour:</b> <br>
                                             The subject line is not changed
                                         </span>
                                     </div>
-                                    
-                                </div>
-            
-                                <div class="col-sm-2 col-xs-12 ">
-                                    <img _ngcontent-gjg-c120="" width="30" height="30" 
-                                    
+
+                                    <img _ngcontent-gjg-c120="" width="30" height="30"
+
                                     [src]="defaultSetting?.addin_settings_mark_filed_messages_subject_locked  ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
                                     (click)="toggleLock('addin_settings_mark_filed_messages_subject_locked')" alt="logo">
-                                </div> 
+                                </div>
 
                             </div><!--row end-->
-                
-                            <div class="row settings-row show-data setting_dropdown">
 
-                                <div class="col-sm-7 col-xs-12">
-                                    <img _ngcontent-gjg-c120="" width="30" height="30"  
+                            <div class="row settings-row show-data setting_dropdown">
+                                <div class="col-sm-2 col-xs-12 text-right"></div>
+                                <div class="col-sm-5 col-xs-12">
+                                    <img _ngcontent-gjg-c120="" width="30" height="30"
                                     [src]=" defaultSetting?.addin_settings_mark_filed_messages_category_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
                                     (click)="markMessageCategory()" alt="logo">
                                     <span class="text-right-left-margin">Add CloudFiler category flag</span>
-                    
-                                    <div class="tooltipwrap">
+
+
+                                </div>
+                                <div class="col-sm-2 col-xs-12 ">
+                                    <div class="tooltipwrap mr-2">
                                         <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
                                         <span class="tooltiptext">
                                             <b> Checked behaviour:</b>
@@ -143,36 +148,38 @@
                                             <b>
                                             Filed to CloudFiler
                                             </b>
-                                    
-                                    
+
+
                                         <br />
                                         <b>Unchecked behaviour:</b> <br>
                                         No category is added
                                         </span>
-                                    </div>  
-                                </div> 
-                                <div class="col-sm-2 col-xs-12 ">
-                                    <img _ngcontent-gjg-c120="" width="30" height="30"  
+                                    </div>
+                                    <img _ngcontent-gjg-c120="" width="30" height="30"
                                     [src]="defaultSetting?.addin_settings_mark_filed_messages_category_locked   ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
                                     (click)="toggleLock('addin_settings_mark_filed_messages_category_locked')" alt="logo">
-                                </div> 
-                            </div>    
-                        </div> <!--row end-->  
-                    </div>  
+                                </div>
+                            </div>
+                        </div> <!--row end-->
+                    </div>
                 </div> <!--end upnfile-->
-  
-  
+
+
                 <div class="uponfile">
-    
+
                 <span class="bold">When drafting an email:</span>
                 <div class="setting_child_row">
-                    <div class=" row settings-row"> 
-                        <div class="col-sm-7 col-xs-12 "> 
-                            <img _ngcontent-gjg-c120="" width="30" height="30"  
+                    <div class=" row settings-row">
+                        <div class="col-sm-3 col-md-2 col-xs-12 text-right"></div>
+                        <div class="col-sm-7 col-md-5 col-xs-12 ">
+                            <img _ngcontent-gjg-c120="" width="30" height="30"
                             [src]=" defaultSetting?.addin_settings_auto_file_sent_emails_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
                             (click)="toggleAutoFileSentEmails()" alt="logo">
                             <span class="text-right-left-margin" >Automatically select the suggested filing location</span>
-                            <div class="tooltipwrap">
+
+                        </div>
+                        <div class="col-sm-2 col-xs-12 ">
+                            <div class="tooltipwrap mr-2">
                                 <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
                                 <span class="tooltiptext">
                                     <b> Checked behaviour:</b>
@@ -182,16 +189,14 @@
                                     <b>Unchecked behaviour:</b> <br>
                                     Emails are only filed when the user selects a filing location
                                 </span>
-                            </div> 
-                        </div>
-                        <div class="col-sm-2 col-xs-12 ">
-                            <img _ngcontent-gjg-c120="" width="30" height="30" 
+                            </div>
+                            <img _ngcontent-gjg-c120="" width="30" height="30"
                             [src]="defaultSetting?.addin_settings_auto_file_sent_emails_locked  ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
                             (click)="toggleLock('addin_settings_auto_file_sent_emails_locked')" alt="logo">
-                        </div>  
-                    </div> 
-                </div> <!--end upnfile-->   
-            </div><!--row end--> 
-        </div>  
+                        </div>
+                    </div>
+                </div> <!--end upnfile-->
+            </div><!--row end-->
+        </div>
     </div>
 </div>
