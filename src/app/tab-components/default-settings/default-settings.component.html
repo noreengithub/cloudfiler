@@ -24,22 +24,22 @@
                     </div>
                 </div>
 
-                <div class="row">
+
                     <div class="uponfile">
 
                         <div class="row">
-                            <span class="bold col-sm-7 col-xs-10">Upon Filing a message:</span>
-                            <span class="col-sm-2 col-xs-10 m-7"> Prevent <br/> user edits  </span>
+                            <span class="bold col-sm-8 col-md-7 col-xs-12">Upon Filing a message:</span>
+                            <span class="col-sm-3 col-md-2 col-xs-12 m-7 text-right"> Prevent <br/> user edits  </span>
                         </div>
 
                         <div class="setting_child_row ">
 
                             <div class="row settings-row show-data setting_dropdown"  >
-                                <div class="col-sm-2 col-xs-12 text-right" [class.disabled]=" defaultSetting?.addin_settings_move_filed_sent_messages_to_locked ">
+                                <div class="col-sm-3 col-md-2 col-xs-12 text-right" [class.disabled]=" defaultSetting?.addin_settings_move_filed_sent_messages_to_locked ">
                                     <span class="f">Sent messages:</span>
                                 </div>
 
-                                <div class="col-sm-5 col-xs-10 ">
+                                <div class="col-sm-7 col-md-5 col-xs-12 ">
 
                                     <a
                                     class="dropdown-toggle user-email" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true"
@@ -57,7 +57,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="col-sm-2 col-xs-12 ">
+                                <div class="col-sm-2 col-md-2 col-xs-12 text-right">
                                     <img _ngcontent-gjg-c120="" width="30" height="30"
                                     [src]="defaultSetting?.addin_settings_move_filed_sent_messages_to_locked   ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
                                     (click)="toggleLock('addin_settings_move_filed_sent_messages_to_locked')" alt="logo">
@@ -65,12 +65,13 @@
 
                             </div><!--row end-->
 
-                            <div class=" row settings-row show-data setting_dropdown" >
-                                <div class="col-sm-2 col-xs-12 text-right"  [class.disabled]=" defaultSetting?.addin_settings_move_filed_messages_to_locked ">
+                            <div class="settings-row show-data setting_dropdown" >
+                                <div class="row">
+                                <div class="col-sm-3 col-md-2 col-xs-12 text-right"  [class.disabled]=" defaultSetting?.addin_settings_move_filed_messages_to_locked ">
                                     <span>Other messages:</span>
                                 </div>
 
-                                <div class="col-sm-5 col-xs-10 "   >
+                                <div class="col-sm-7 col-md-5 col-xs-12"   >
                                     <a class="dropdown-toggle user-email" data-toggle="dropdown"href="javascript:void(0)" role="button" aria-haspopup="true"
                                     [class.disabled]=" defaultSetting?.addin_settings_move_filed_messages_to_locked "
                                     aria-expanded="false">
@@ -85,17 +86,18 @@
                                     </ul>
                                 </div>
 
-                                <div class="col-sm-2 col-xs-12 ">
+                                <div class="col-sm-2 col-md-2 col-xs-12 text-right">
                                     <img _ngcontent-gjg-c120="" width="30" height="30"
                                         [src]="defaultSetting?.addin_settings_move_filed_messages_to_locked ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
                                         (click)="toggleLock('addin_settings_move_filed_messages_to_locked')" alt="logo">
                                 </div>
+                            </div>
 
                             </div><!--row end-->
 
                             <div class="row settings-row show-data setting_dropdown ">
-                                <div class="col-sm-2 col-xs-12 text-right"></div>
-                                <div class="col-sm-5 col-xs-12">
+                                <div class="col-sm-3 col-md-2 col-xs-12 text-right"></div>
+                                <div class="col-sm-7 col-md-5 col-xs-12">
                                     <img _ngcontent-gjg-c120="" width="30" height="30"
                                     [src]=" defaultSetting?.addin_settings_mark_filed_messages_subject_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
                                     (click)="markMessageSubject()" alt="logo">
@@ -104,7 +106,7 @@
 
                                 </div>
 
-                                <div class="col-sm-2 col-xs-12 ">
+                                <div class="col-sm-2 col-md-2 col-xs-12 text-right">
                                     <div class="tooltipwrap mr-2">
                                         <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
                                         <span class="tooltiptext">
@@ -129,8 +131,8 @@
                             </div><!--row end-->
 
                             <div class="row settings-row show-data setting_dropdown">
-                                <div class="col-sm-2 col-xs-12 text-right"></div>
-                                <div class="col-sm-5 col-xs-12">
+                                <div class="col-sm-3 col-md-2 col-xs-12 text-right"></div>
+                                <div class="col-sm-7 col-md-5 col-xs-12">
                                     <img _ngcontent-gjg-c120="" width="30" height="30"
                                     [src]=" defaultSetting?.addin_settings_mark_filed_messages_category_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
                                     (click)="markMessageCategory()" alt="logo">
@@ -138,7 +140,7 @@
 
 
                                 </div>
-                                <div class="col-sm-2 col-xs-12 ">
+                                <div class="col-sm-2 col-md-2 col-xs-12 text-right">
                                     <div class="tooltipwrap mr-2">
                                         <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
                                         <span class="tooltiptext">
@@ -162,23 +164,27 @@
                             </div>
                         </div> <!--row end-->
                     </div>
-                </div> <!--end upnfile-->
+                <!--end upnfile-->
 
 
                 <div class="uponfile">
 
-                <span class="bold">When drafting an email:</span>
+
+
+                    <span class="bold">When drafting an email:</span>
+
+
                 <div class="setting_child_row">
                     <div class=" row settings-row">
                         <div class="col-sm-3 col-md-2 col-xs-12 text-right"></div>
-                        <div class="col-sm-7 col-md-5 col-xs-12 ">
+                        <div class="col-sm-7 col-md-5 col-xs-12">
                             <img _ngcontent-gjg-c120="" width="30" height="30"
                             [src]=" defaultSetting?.addin_settings_auto_file_sent_emails_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
                             (click)="toggleAutoFileSentEmails()" alt="logo">
                             <span class="text-right-left-margin" >Automatically select the suggested filing location</span>
 
                         </div>
-                        <div class="col-sm-2 col-xs-12 ">
+                        <div class="col-sm-2 col-md-2 col-xs-12 text-right">
                             <div class="tooltipwrap mr-2">
                                 <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
                                 <span class="tooltiptext">

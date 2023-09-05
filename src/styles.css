@@ -187,6 +187,8 @@ a.add_group img {
 @media screen and (max-width: 768px){
   span.tooltiptext{
     width: 335px !important;
+    right: 0;
+    left: auto !important;
   }
   .private_note {
     width: 100% !important;

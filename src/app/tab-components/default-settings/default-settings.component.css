@@ -17,9 +17,9 @@
   margin-left: auto;
 }
 .setting_child_row{
-   
+
   margin-left: 5rem;
-  
+
 }
 .allowuser h5 {
   font-size: 18px;
@@ -126,4 +126,33 @@
 
 .disabled{
   opacity: 0.5;
+}
+
+@media (max-width:991px){
+  .setting_child_row{
+    margin-left: 0;
+  }
+  .uponfile{
+    margin-left:0;
+    margin-right: 0;
+  }
+}
+@media (max-width:768px){
+  .mr-2{
+    margin-right: 1rem;
+  }
+}
+@media (max-width:767px){
+  .uponfile span{
+    text-align: left;
+  }
+  .settings-row .text-right{
+    text-align: left;
+    display: inline-flex;
+  }
+  .setting_dropdown a.dropdown-toggle{
+    display: inline-block;
+    width: 100%;
+    margin-bottom:0.5rem;
+  }
 }
