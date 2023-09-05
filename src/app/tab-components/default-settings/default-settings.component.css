@@ -153,6 +153,6 @@
   .setting_dropdown a.dropdown-toggle{
     display: inline-block;
     width: 100%;
-    margin-bottom:0.5rem;
+    margin-bottom:1rem;
   }
 }
