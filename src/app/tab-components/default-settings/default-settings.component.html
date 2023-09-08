@@ -24,6 +24,7 @@
                     </div>
                 </div>
 
+                <div class="row">
 
                     <div class="uponfile">
 
@@ -164,45 +165,44 @@
                             </div>
                         </div> <!--row end-->
                     </div>
-                <!--end upnfile-->
+                    <!--end upnfile-->
 
 
-                <div class="uponfile">
+                    <div class="uponfile">
+  
+                        <span class="bold">When drafting an email:</span>
+ 
+                        <div class="setting_child_row">
+                            <div class=" row settings-row">
+                                <div class="col-sm-3 col-md-2 col-xs-12 text-right"></div>
+                                <div class="col-sm-7 col-md-5 col-xs-12">
+                                    <img _ngcontent-gjg-c120="" width="30" height="30"
+                                    [src]=" defaultSetting?.addin_settings_auto_file_sent_emails_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
+                                    (click)="toggleAutoFileSentEmails()" alt="logo">
+                                    <span class="text-right-left-margin" >Automatically select the suggested filing location</span>
 
-
-
-                    <span class="bold">When drafting an email:</span>
-
-
-                <div class="setting_child_row">
-                    <div class=" row settings-row">
-                        <div class="col-sm-3 col-md-2 col-xs-12 text-right"></div>
-                        <div class="col-sm-7 col-md-5 col-xs-12">
-                            <img _ngcontent-gjg-c120="" width="30" height="30"
-                            [src]=" defaultSetting?.addin_settings_auto_file_sent_emails_value  ?'./../assets/images/checkbox-checked-outline.svg':'./../assets/images/checkbox-unchecked-outline.svg'"
-                            (click)="toggleAutoFileSentEmails()" alt="logo">
-                            <span class="text-right-left-margin" >Automatically select the suggested filing location</span>
-
-                        </div>
-                        <div class="col-sm-2 col-md-2 col-xs-12 text-right">
-                            <div class="tooltipwrap mr-2">
-                                <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
-                                <span class="tooltiptext">
-                                    <b> Checked behaviour:</b>
-                                    <br>
-                                    CloudFiler will automatically select the top-most suggested filing location
-                                    <br />
-                                    <b>Unchecked behaviour:</b> <br>
-                                    Emails are only filed when the user selects a filing location
-                                </span>
+                                </div>
+                                <div class="col-sm-2 col-md-2 col-xs-12 text-right">
+                                    <div class="tooltipwrap mr-2">
+                                        <img _ngcontent-nil-c120="" width="30" height="30" src="./../assets/images/info.svg" alt="logo">
+                                        <span class="tooltiptext">
+                                            <b> Checked behaviour:</b>
+                                            <br>
+                                            CloudFiler will automatically select the top-most suggested filing location
+                                            <br />
+                                            <b>Unchecked behaviour:</b> <br>
+                                            Emails are only filed when the user selects a filing location
+                                        </span>
+                                    </div>
+                                    <img _ngcontent-gjg-c120="" width="30" height="30"
+                                    [src]="defaultSetting?.addin_settings_auto_file_sent_emails_locked  ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
+                                    (click)="toggleLock('addin_settings_auto_file_sent_emails_locked')" alt="logo">
+                                </div>
                             </div>
-                            <img _ngcontent-gjg-c120="" width="30" height="30"
-                            [src]="defaultSetting?.addin_settings_auto_file_sent_emails_locked  ?'./../assets/images/padlock.svg':'./../assets/images/padlock-open.svg'"
-                            (click)="toggleLock('addin_settings_auto_file_sent_emails_locked')" alt="logo">
                         </div>
-                    </div>
-                </div> <!--end upnfile-->
-            </div><!--row end-->
+                    </div> <!--end upnfile-->
+                </div><!--row end-->
+            </div>
         </div>
     </div>
 </div>
