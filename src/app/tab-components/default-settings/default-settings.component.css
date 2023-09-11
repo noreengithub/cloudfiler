@@ -4,6 +4,7 @@
   font-weight: bold;
   vertical-align: middle;
 }
+ 
 .note {
   margin-top: 1rem;
 }
@@ -128,6 +129,13 @@
   opacity: 0.5;
 }
 
+.uponfile .subheading{
+  text-align: right;
+}
+.prevent-text{
+  margin-left: 5px;
+}
+
 @media (max-width:991px){
   .setting_child_row{
     margin-left: 0;
@@ -136,6 +144,9 @@
     margin-left:0;
     margin-right: 0;
   }
+  .uponfile{
+    margin-top: 2rem;
+  }
 }
 @media (max-width:768px){
   .mr-2{
@@ -143,10 +154,17 @@
   }
 }
 @media (max-width:767px){
-  .uponfile span{
+  .uponfile{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .uponfile .heading span{
     text-align: left;
   }
-  .settings-row .text-right{
+  .uponfile .subheading{
+    text-align: left;
+  }
+  .settings-row .heading .text-left{
     text-align: left;
     display: inline-flex;
   }
@@ -156,3 +174,9 @@
     margin-bottom:1rem;
   }
 }
+
+
+  .row {
+    
+    font-size: 18px !important;
+  }
