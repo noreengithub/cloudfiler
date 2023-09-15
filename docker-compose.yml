@@ -1,0 +1,9 @@
+services:
+  cloudfiler-project:
+    build: ./cloudfiler
+    container_name: cloudfiler-project
+    ports:
+      - 4200:4200 
+    volumes:
+      - /app/node_modules  # <-- Add this
+      - ./cloudfiler:/app # <!-- or remove this
