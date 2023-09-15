@@ -4,11 +4,21 @@
     vertical-align: top;
     font-size: 18px;
     font-weight: 600;
+    text-transform: capitalize;
 }
-.private-location-edit-delete {
+
+.private-location-edit-delete { 
+    margin-left: 4.2rem !important; 
+}
+
+.salaryreview .private-location-edit-delete{
+    display: none;
+}
+ 
+.salaryreview:hover .private-location-edit-delete{
     display: inline-block;
-    margin-left: 4.2rem !important;
 }
+ 
 .private-location-edit-delete img{
     margin-left: 0.2rem !important;
 }
@@ -110,6 +120,10 @@
     font-weight: 600;
     margin-top: 2rem;
 }
+.salaryreview {
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+}
 .salaryreview img{
         width: 30px;
         margin-left: 2.6rem;
@@ -118,19 +132,20 @@
         font-size: 18px;
         font-weight: 600;
         margin-left: 1rem;
+        text-transform: capitalize; 
     }
-    .add_user_btn {
+    .add_location_btn {
         margin-top: 7rem;
     }
-    .add_user{
+    .add_location{
         font-size: 18px;
         vertical-align: middle;
-        color: #000000;
+        color: #000000 !important;
         cursor: pointer;
         text-decoration: none;
         font-weight: 600;
     }
-    .add_user img{
+    .add_location img{
         margin-right: 1rem;
     }
     .private_note{
