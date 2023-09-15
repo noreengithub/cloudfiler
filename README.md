@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Dockerization and Development server
 
 Install docker composer in system and run this command 
-Run `docker composer up` for a creating container. Navigate to `http://localhost:4200/?access_token=8450b416-06e7-4dec-ae2e-52cb8166b275`. The app will automatically reload if you change any of the source files.
+Run `docker compose up` for a creating container. Navigate to `http://localhost:4200/?access_token=8450b416-06e7-4dec-ae2e-52cb8166b275`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
