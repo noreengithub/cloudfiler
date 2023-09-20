@@ -1,6 +1,6 @@
 # Cloudfiler
 
-fffffffffffffT 22222222222 333333 his project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
 ## Dockerization and Development server
 
